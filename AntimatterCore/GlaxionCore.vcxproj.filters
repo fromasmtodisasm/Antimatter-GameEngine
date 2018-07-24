@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{00133ffb-43b4-4d4d-967e-b1c1591b55a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GlaxionHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxDebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxXfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Colour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxColour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxDeformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaternion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxTransform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Thing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxMousePicker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineForward.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxPrimitive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectSelection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxRenderSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GlaxionTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxCore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxImageLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CImg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NativeDelegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XFileLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="callIntrinsics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxVAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxRender2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FontManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glaxDefaultShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SubGeometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContactPair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Contact.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Definitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FontNativer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FontShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manifold.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderLine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Velocity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsPair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsScene2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SImplex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SubScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manifold2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsSolver2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Contact2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Edge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextGraphic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InverseKinematics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestGJK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsSolver3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MPR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GJK2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GJK2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GJK3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeferedShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Contact.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContactPair.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FontShader.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GImage.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glaxCore.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glaxMousePicker.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glaxRender2D.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glaxRenderer.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glaxRendererShader.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glaxShader.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glaxShaders.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glaxTransform.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glaxWindow.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Line.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Manifold.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseState.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NativeDelegate.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectSelection.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSettngs.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SubGeometry.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform2D.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XFileLoader.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContactPoint.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InverseKinematics.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Manifold2d.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics2d.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsScene2D.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsSolver2d.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsSolver3D.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGJK.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeferedShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="GLFW_ICON.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Debug\default.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="glaxionTree.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\antimattergame\assets\blue_spot.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\antimattergame\assets\circle.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\antimattergame\assets\default.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\antimattergame\assets\logiccloud.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\antimattergame\assets\mainappicon.ico">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\antimattergame\assets\ball.x">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="..\antimattergame\assets\cube.x">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="..\antimattergame\assets\cuboid.x">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="..\antimattergame\assets\cylinder.x">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="..\antimattergame\assets\floor.x">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="..\antimattergame\assets\softcube.x">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="..\antimattergame\assets\sprite.x">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="..\antimattergame\assets\texturedcube.x">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="..\antimattergame\assets\torus.x">
+      <Filter>Assets</Filter>
+    </None>
+  </ItemGroup>
+</Project>

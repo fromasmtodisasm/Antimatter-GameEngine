@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4D0BB2B3-BB21-41CD-A814-FF5AAE73A430}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>GlaxionCore</RootNamespace>
+    <ProjectName>AntiMatter</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;freetype271d.lib;SOILdebug.lib;SOILrelease.lib;legacy_stdio_definitions.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+      <EmbedManagedResourceFile>
+      </EmbedManagedResourceFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;freeglut.lib;SOILdebug.lib;SOILrelease.lib;freetype271d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+      <EmbedManagedResourceFile>
+      </EmbedManagedResourceFile>
+      <AdditionalOptions>legacy_stdio_definitions.lib</AdditionalOptions>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="irrKlang.NET4">
+      <HintPath>irrKlang-32bit-1.6.0\irrKlang-1.6.0\bin\dotnet-4\irrKlang.NET4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="callIntrinsics.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CImg.h" />
+    <ClInclude Include="Contact2d.h" />
+    <ClInclude Include="DeferedShader.h" />
+    <ClInclude Include="Definitions.h" />
+    <ClInclude Include="Edge.h" />
+    <ClInclude Include="Font.h" />
+    <ClInclude Include="FontNativer.h" />
+    <ClInclude Include="FontShader.h" />
+    <ClInclude Include="FrameBuffer.h" />
+    <ClInclude Include="glaxList.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="include\ft2build.h" />
+    <ClInclude Include="MendelbrotHeader.h" />
+    <ClInclude Include="MouseShooter.h" />
+    <ClInclude Include="ShaderFor2DGlow.h" />
+    <ClInclude Include="ShaderForDiamonds2D.h" />
+    <ClInclude Include="Shape2D.h" />
+    <ClInclude Include="TestGame.h" />
+    <ClInclude Include="GJK2D.h" />
+    <ClInclude Include="GJK3d.h" />
+    <ClInclude Include="GJK2.h" />
+    <ClInclude Include="Manifold2d.h" />
+    <ClInclude Include="MPR.h" />
+    <ClInclude Include="Physics2d.h" />
+    <ClInclude Include="PhysicsPair.h" />
+    <ClInclude Include="PhysicsScene.h" />
+    <ClInclude Include="PhysicsScene2D.h" />
+    <ClInclude Include="PhysicsSolver2d.h" />
+    <ClInclude Include="PhysicsSolver3D.h" />
+    <ClInclude Include="SubScene.h" />
+    <ClInclude Include="PhysicsScene3D.h" />
+    <ClInclude Include="TextGraphic.h" />
+    <ClInclude Include="tool.h" />
+    <ClInclude Include="ShaderFor2DPrimitives.h" />
+    <ClInclude Include="Velocity.h" />
+    <ClInclude Include="Manifold.h" />
+    <ClInclude Include="Colour.h" />
+    <ClInclude Include="Contact.h" />
+    <ClInclude Include="ContactPair.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="Collider2d.h" />
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="Draw.h" />
+    <ClInclude Include="EngineForward.h" />
+    <ClInclude Include="EngineHeader.h" />
+    <ClInclude Include="FontManager.h" />
+    <ClInclude Include="GImage.h" />
+    <ClInclude Include="glaxCamera.h" />
+    <ClInclude Include="glaxController.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="glaxDebug.h" />
+    <ClInclude Include="GlaxionHeader.h" />
+    <ClInclude Include="glaxRender2D.h" />
+    <ClInclude Include="glaxShader.h" />
+    <ClInclude Include="glaxVAO.h" />
+    <ClInclude Include="glaxWindow.h" />
+    <ClInclude Include="Graphic.h" />
+    <ClInclude Include="LineGraphic.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="OpenGL.h" />
+    <ClInclude Include="Physics.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="RenderSettings.h" />
+    <ClInclude Include="glaxDefaultShader.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="SubGeometry.h" />
+    <ClInclude Include="Transform2D.h" />
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="glaxRenderSettings.h" />
+    <ClInclude Include="glaxTexture.h" />
+    <ClInclude Include="glaxTransform.h" />
+    <ClInclude Include="glaxPrimitive.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="EditorMouse.h" />
+    <ClInclude Include="ObjectSelection.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Thing.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Quaternion.h" />
+    <ClInclude Include="glaxRenderer.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SystemHeader.h" />
+    <ClInclude Include="glaxCore.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="XFileLoader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="ContactPoint.cpp" />
+    <ClCompile Include="DeferedShader.cpp" />
+    <ClCompile Include="FontShader.cpp" />
+    <ClCompile Include="FrameBuffer.cpp" />
+    <ClCompile Include="glaxRender2D.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Manifold.cpp" />
+    <ClCompile Include="Contact.cpp" />
+    <ClCompile Include="ContactPair.cpp" />
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="GImage.cpp" />
+    <ClCompile Include="glaxRenderer.cpp" />
+    <ClCompile Include="glaxRendererShader.cpp" />
+    <ClCompile Include="glaxShader.cpp" />
+    <ClCompile Include="glaxTransform.cpp" />
+    <ClCompile Include="glaxWindow.cpp" />
+    <ClCompile Include="Manifold2d.cpp" />
+    <ClCompile Include="MouseShooter.cpp" />
+    <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="Physics.cpp" />
+    <ClCompile Include="Physics2d.cpp" />
+    <ClCompile Include="PhysicsScene2D.cpp" />
+    <ClCompile Include="PhysicsSolver2d.cpp" />
+    <ClCompile Include="PhysicsSolver3D.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="glaxCore.cpp" />
+    <ClCompile Include="XFileLoader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\default.png" />
+    <Image Include="Assets\mainAppIcon.ico" />
+    <Image Include="GLFW_ICON.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</DeploymentContent>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\ball.x" />
+    <None Include="Assets\cube.x" />
+    <None Include="Assets\cuboid.x" />
+    <None Include="Assets\floor.x" />
+    <None Include="Assets\sprite.x" />
+    <None Include="lib\irrKlang.NET4.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\FreeSans.ttf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

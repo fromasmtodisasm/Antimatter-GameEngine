@@ -1,0 +1,15 @@
+#pragma once
+#include "SystemHeader.h" 
+#include "GlaxionHeader.h"
+#include "glaxCore.h"
+#include "Core.h"
+#include "Scene.h"
+#include "Controller.h"
+#include "Keyboard.h"
+#include "EditorMouse.h"
+#include "MainWindow.h"
+#include "glaxFont.h"
+#include "callIntrinsics.h"
+#include "Component.h"
+//#include <intrin.h>
+//#include <stdio.h> 

@@ -1,0 +1,2365 @@
+  GlaxionCore.Resource.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly AntiMatter, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly irrKlang.NET4, Version=1.0.6617.18810, Culture=neutral, PublicKeyToken=a854741bd80517c7: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Antimatter.Games.Component: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Load(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Update(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Antimatter.Games.tool: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 Count : Public, Static
+    Int32 debugIndex : Public, Static
+    Int32 debugTrace : Public, Static
+    Int32 LowerTraceRange : Public, Static
+  Methods:
+    SetConsoleColours(ConsoleColor, ConsoleColor): PrivateScope, Public, Static, HideBySig
+    FilePathHasInvalidChars(String): PrivateScope, Public, Static, HideBySig
+    clamp(Int32 IsLong, Int32 IsLong, Int32 IsLong): PrivateScope, Public, Static, HideBySig
+    clamp(Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    clamp(Double, Double, Double): PrivateScope, Public, Static, HideBySig
+    clamp(Single, Single, Single): PrivateScope, Public, Static, HideBySig
+    RoundToSingleDecimal(Single): PrivateScope, Public, Static, HideBySig
+    Min(Single, Single): PrivateScope, Public, Static, HideBySig
+    Max(Single, Single): PrivateScope, Public, Static, HideBySig
+    WriteLine(ConsoleColor, String[]): PrivateScope, Public, Static, HideBySig
+    DebugText(String[]): PrivateScope, Public, Static, HideBySig
+    min(Int32 IsLong, Int32 IsLong): PrivateScope, Public, Static, HideBySig
+    min(Double, Double): PrivateScope, Public, Static, HideBySig
+    min(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    min(Single, Single): PrivateScope, Public, Static, HideBySig
+    max(Int32 IsLong, Int32 IsLong): PrivateScope, Public, Static, HideBySig
+    max(Double, Double): PrivateScope, Public, Static, HideBySig
+    max(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    max(Single, Single): PrivateScope, Public, Static, HideBySig
+    debug(Object[]): PrivateScope, Public, Static, HideBySig
+    debug(String): PrivateScope, Public, Static, HideBySig
+    debug(String[]): PrivateScope, Public, Static, HideBySig
+    debug(Int32, Object[]): PrivateScope, Public, Static, HideBySig
+    debug(ConsoleColor, Object[]): PrivateScope, Public, Static, HideBySig
+    debugError(Object[]): PrivateScope, Public, Static, HideBySig
+    debugGreen(Object[]): PrivateScope, Public, Static, HideBySig
+    debugDarkGreen(Object[]): PrivateScope, Public, Static, HideBySig
+    debugBlue(Object[]): PrivateScope, Public, Static, HideBySig
+    debugDarkBlue(Object[]): PrivateScope, Public, Static, HideBySig
+    debugMagenta(Object[]): PrivateScope, Public, Static, HideBySig
+    debugDarkMagenta(Object[]): PrivateScope, Public, Static, HideBySig
+    debugYellow(Object[]): PrivateScope, Public, Static, HideBySig
+    debugDarkYellow(Object[]): PrivateScope, Public, Static, HideBySig
+    debugGray(Object[]): PrivateScope, Public, Static, HideBySig
+    debugDarkGray(Object[]): PrivateScope, Public, Static, HideBySig
+    GetCallingMethod(StackFrame): PrivateScope, Public, Static, HideBySig
+    show(): PrivateScope, Public, Static, HideBySig
+    show(Object[]): PrivateScope, Public, Static, HideBySig
+    CheckValidString(String): PrivateScope, Public, Static, HideBySig
+    IsAudioFile(String): PrivateScope, Public, Static, HideBySig
+    IsTextFile(String): PrivateScope, Public, Static, HideBySig
+    IsPlaylistFile(String): PrivateScope, Public, Static, HideBySig
+    IsImageFile(String): PrivateScope, Public, Static, HideBySig
+    IsVideoFile(String): PrivateScope, Public, Static, HideBySig
+    IsAlphabet(String): PrivateScope, Public, Static, HideBySig
+    LoadFiles(String, String): PrivateScope, Public, Static, HideBySig
+Class Antimatter.Games.Colour: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(glm.tvec4<float\,0>*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Colour, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single r : Public
+    Single g : Public
+    Single b : Public
+    Single a : Public
+  Properties:
+    Antimatter.Games.Colour Black 'get ' : 
+    Antimatter.Games.Colour White 'get ' : 
+    Antimatter.Games.Colour Purple 'get ' : 
+    Antimatter.Games.Colour Violet 'get ' : 
+    Antimatter.Games.Colour Vermillion 'get ' : 
+    Antimatter.Games.Colour DarkOrange 'get ' : 
+    Antimatter.Games.Colour Orange 'get ' : 
+    Antimatter.Games.Colour Yellow 'get ' : 
+    Antimatter.Games.Colour LightBlue 'get ' : 
+    Antimatter.Games.Colour Blue 'get ' : 
+    Antimatter.Games.Colour DarkGreen 'get ' : 
+    Antimatter.Games.Colour Green 'get ' : 
+    Antimatter.Games.Colour Red 'get ' : 
+    Antimatter.Games.Colour New 'get ' : 
+  Methods:
+    Alpha(Single): PrivateScope, Public, HideBySig
+    Round(): PrivateScope, Public, HideBySig
+    op_Equality(Colour, Colour): PrivateScope, Public, Static, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    RandomColour(): PrivateScope, Public, Static, HideBySig
+    Make(Single, Single, Single): PrivateScope, Public, Static, HideBySig
+    Make(Single, Single, Single, Single): PrivateScope, Public, Static, HideBySig
+    get_New(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Red(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Green(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkGreen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Blue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LightBlue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Yellow(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Orange(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DarkOrange(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Vermillion(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Violet(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Purple(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_White(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Black(): PrivateScope, Public, Static, HideBySig, SpecialName
+    Debug(String): PrivateScope, Public, HideBySig
+    glm(tvec4<float\,0>*): PrivateScope, Public, HideBySig
+    op_Addition(Colour, Colour): PrivateScope, Public, Static, HideBySig, SpecialName
+    setRGBA(Colour): PrivateScope, Public, HideBySig
+    setRGBA(Single, Single, Single, Single): PrivateScope, Public, HideBySig
+    setRGB(Colour): PrivateScope, Public, HideBySig
+    setRGB(Single, Single, Single): PrivateScope, Public, HideBySig
+    op_Subtraction(Colour, Colour): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Colour, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(Colour, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Antimatter.Games.Graphic: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 lifeTime : Public
+    Single width : Public
+    Boolean overrideBatchRender : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Graphic] Batches : Public, Static
+    Boolean FreezeGraphics : Public, Static
+  Methods:
+    Update(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Draw(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    UpdateBatches(): PrivateScope, Public, Static, HideBySig
+    DrawBatches(): PrivateScope, Public, Static, HideBySig
+Class Antimatter.Games.UpdateEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Single): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Single, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class Antimatter.Games.ErrorEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(String, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class Antimatter.Games.ResizeEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class Antimatter.Games.DropEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(List`1): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(List`1, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class Antimatter.Games.MouseClickEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class Antimatter.Games.MousePositionEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Double, Double): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Double, Double, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class Antimatter.Games.MouseScrollEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class Antimatter.Games.KeyboardEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, Int32, Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class Antimatter.Games.Core: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean debug : Public
+    Antimatter.Games.Core CoreEvents : Public, Static
+    Boolean Assert : Public, Static
+    Single DeltaTime : Public, Static
+    Int64 DeltaTimeInt : Public, Static
+    Int64 frame : Public, Static
+    System.Collections.Generic.List`1[System.String] DropFiles : Public, Static
+  Events:
+    Antimatter.Games.DropEventHandler FileDropEvent: SpecialName
+    Antimatter.Games.ResizeEventHandler ResizeEvent: SpecialName
+    Antimatter.Games.KeyboardEventHandler OnKeyboardEvent: SpecialName
+    System.Windows.Forms.MouseEventHandler OnMouseEvent: SpecialName
+    Antimatter.Games.MouseScrollEventHandler OnScrollEvent: SpecialName
+    Antimatter.Games.MousePositionEventHandler OnMoveEvent: SpecialName
+    Antimatter.Games.MouseClickEventHandler OnMouseClickEvent: SpecialName
+    Antimatter.Games.ErrorEventHandler OnErrorEvent: SpecialName
+    Antimatter.Games.UpdateEventHandler OnUpdateEvent: SpecialName
+  Methods:
+    add_OnUpdateEvent(UpdateEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnUpdateEvent(UpdateEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnErrorEvent(ErrorEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnErrorEvent(ErrorEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnMouseClickEvent(MouseClickEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnMouseClickEvent(MouseClickEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnMoveEvent(MousePositionEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnMoveEvent(MousePositionEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnScrollEvent(MouseScrollEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnScrollEvent(MouseScrollEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnMouseEvent(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnMouseEvent(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnKeyboardEvent(KeyboardEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnKeyboardEvent(KeyboardEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    HookEvents(Core): PrivateScope, Public, Static, HideBySig
+    UnhookEvents(Core): PrivateScope, Public, Static, HideBySig
+    Keyboard_RaiseEvents(Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    OnKeyboard(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MouseButton_CallBack(Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    MousePosition_CallBack(Double, Double): PrivateScope, Public, Static, HideBySig
+    MouseScroll_CallBack(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    GetNDC2D(tvec2<float\,0>*, Single, Single): PrivateScope, Public, Static, HideBySig
+    Break(Int32): PrivateScope, Public, Static, HideBySig
+    Update_CallBack(Single): PrivateScope, Public, Static, HideBySig
+    Error_CallBack(SByte*): PrivateScope, Public, Static, HideBySig
+    OnUpdate(Single): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnClick(Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnMove(Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnScroll(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnError(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_ResizeEvent(ResizeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ResizeEvent(ResizeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_FileDropEvent(DropEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_FileDropEvent(DropEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    OnResize(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnFileDrop(List`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Resize_CallBack(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Drop_CallBack(Int32, SByte**): PrivateScope, Public, Static, HideBySig
+Struct Antimatter.glx.Shader: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Antimatter.glx.GlyphShot: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Antimatter.glx.FontShader: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Class Antimatter.Games.FontManager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Antimatter.glx.FontShader* freeSans : Public
+    Antimatter.Games.FontManager current : Public, Static
+  Methods:
+    StringToChars(String): PrivateScope, Public, Static, HideBySig
+    DisplayVector(String, tvec3<float\,0>, tvec4<float\,0>, Single): PrivateScope, Public, HideBySig
+    RenderString(String, Single, Single, Colour, Single, Single): PrivateScope, Public, HideBySig
+    DrawNDC(String, Single, Single, Colour, Single, Single): PrivateScope, Public, HideBySig
+    DisplayAtPoint(String, tvec3<float\,0>, tvec3<float\,0>, Single): PrivateScope, Public, Static, HideBySig
+    DrawInWorld(String, tvec3<float\,0>* IsImplicitlyDereferenced, Colour, Single, Single, tmat4x4<float\,0>* IsImplicitlyDereferenced, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    RenderNative(String, Single, Single, Single, tvec4<float\,0>, Single, Single, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), tmat4x4<float\,0>): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Antimatter.Games.ScreenText: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.Graphic
+    Void .ctor(System.String, Antimatter.Games.Colour, Single, Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String text : Public
+    Antimatter.Games.Colour colour : Public
+    Single scaleX : Public
+    Single scaleY : Public
+    Single x : Public
+    Single y : Public
+    Boolean useProjection : Public
+  Methods:
+    Draw(): PrivateScope, Public, Virtual, HideBySig
+Class Antimatter.Games.WorldText: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.Graphic
+    Void .ctor(System.String, Antimatter.Games.Colour, glm.tvec3<float\,0>*, Single, Single, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String text : Public
+    Antimatter.Games.Colour colour : Public
+    Antimatter.Games.Colour colour2 : Public
+    Single scaleX : Public
+    Single scaleY : Public
+    Single x : Public
+    Single y : Public
+    Single z : Public
+    Boolean billboard : Public
+    Boolean useProjection : Public
+  Methods:
+    Draw(): PrivateScope, Public, Virtual, HideBySig
+Class Antimatter.Games.LineGraphic: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.Graphic
+    Void .ctor(Antimatter.Games.LineGraphic): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(glm.tvec3<float\,0>*, glm.tvec3<float\,0>*, Antimatter.Games.Colour, Antimatter.Games.Colour, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(glm.tvec3<float\,0>*, glm.tvec3<float\,0>*, Antimatter.Games.Colour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(glm.tvec3<float\,0>*, glm.tvec3<float\,0>*, Antimatter.Games.Colour, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single ax : Public
+    Single ay : Public
+    Single az : Public
+    Single bx : Public
+    Single by : Public
+    Single bz : Public
+    Antimatter.Games.Colour colour : Public
+    Antimatter.Games.Colour colour2 : Public
+    Single width : Public
+    Boolean drawOnTop : Public
+    Boolean orthoGraphic : Public
+    UInt32 index : Public
+  Methods:
+    Draw(): PrivateScope, Public, Virtual, HideBySig
+Class Antimatter.Games.Vector: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(glm.tvec2<float\,0>*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(glm.tvec4<float\,0>*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(glm.tvec3<float\,0>*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single x : Public
+    Single y : Public
+    Single z : Public
+    Single w : Public
+    Antimatter.Games.Vector Zero : Public, Static
+    Antimatter.Games.Vector up : Public, Static
+    Antimatter.Games.Vector down : Public, Static
+    Antimatter.Games.Vector left : Public, Static
+    Antimatter.Games.Vector right : Public, Static
+    Antimatter.Games.Vector front : Public, Static
+    Antimatter.Games.Vector back : Public, Static
+  Properties:
+    Single m2  'get ' : 
+    Single m   'get ' : 
+    Antimatter.Games.Vector n 'get ' : 
+  Methods:
+    GetString(): PrivateScope, Public, HideBySig
+    See(Single): PrivateScope, Public, HideBySig
+    asDirection(): PrivateScope, Public, HideBySig
+    asPoint(): PrivateScope, Public, HideBySig
+    glm(tvec3<float\,0>*): PrivateScope, Public, HideBySig
+    ToGLM4(tvec4<float\,0>*): PrivateScope, Public, HideBySig
+    ToGLM4(tvec4<float\,0>*, Single): PrivateScope, Public, HideBySig
+    ToGLM2(tvec2<float\,0>*): PrivateScope, Public, HideBySig
+    ToGLM3(tvec3<float\,0>*): PrivateScope, Public, HideBySig
+    op_Implicit(tvec3<float\,0>*, Vector): PrivateScope, Public, Static, HideBySig, SpecialName
+    dot(Vector): PrivateScope, Public, HideBySig
+    dot2d(Vector): PrivateScope, Public, HideBySig
+    Dot(Vector, Vector): PrivateScope, Public, Static, HideBySig
+    SideOfLine(Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    LineIntersection(Vector, Vector, Vector, Vector, Vector&): PrivateScope, Public, Static, HideBySig
+    DistanceToLine(Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    SideOfPlane(Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    TriangleNormal3D(Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    InsidePlane3d(Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    DistanceToPlane3d(Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    ComputeTangent(Vector, Vector): PrivateScope, Public, Static, HideBySig
+    cross(Vector): PrivateScope, Public, HideBySig
+    RayPlaneIntersection(Vector, Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    OutsidePlane(Vector, Vector): PrivateScope, Public, Static, HideBySig
+    Cross(Vector, Vector): PrivateScope, Public, Static, HideBySig
+    DoubleCross(Vector, Vector): PrivateScope, Public, Static, HideBySig
+    TripleCross(Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    Angle(Vector, Vector): PrivateScope, Public, Static, HideBySig
+    op_Implicit(Vector IsByValue): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(tvec3<float\,0>): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(tmat3x3<float\,0>*, Vector): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(tmat3x3<float\,0>* IsImplicitlyDereferenced, Vector): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Vector, tmat3x3<float\,0>*): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Vector, tmat3x3<float\,0>* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Single, Vector): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Vector, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Vector, Vector): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Vector, tmat4x4<float\,0>*): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(tmat4x4<float\,0>*, Vector): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Vector, tmat4x4<float\,0>* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(tmat4x4<float\,0>* IsImplicitlyDereferenced, Vector): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_UnaryNegation(Vector): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(Vector IsConst, Vector IsConst): PrivateScope, Public, Static, HideBySig, SpecialName
+    Negated(): PrivateScope, Public, HideBySig
+    op_Division(Vector, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(Vector, Vector): PrivateScope, Public, Static, HideBySig, SpecialName
+    Divide(Vector, Single): PrivateScope, Public, Static, HideBySig
+    Divide(Vector, Vector): PrivateScope, Public, Static, HideBySig
+    op_Modulus(Vector, Vector): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_ExclusiveOr(Vector, Vector): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Vector IsConst, Vector IsConst): PrivateScope, Public, Static, HideBySig, SpecialName
+    lengthSquared(): PrivateScope, Public, HideBySig
+    length(): PrivateScope, Public, HideBySig
+    get_n(): PrivateScope, Public, HideBySig, SpecialName
+    get_m(): PrivateScope, Public, HideBySig, SpecialName
+    get_m2(): PrivateScope, Public, HideBySig, SpecialName
+    normalized(): PrivateScope, Public, HideBySig
+    normalize(): PrivateScope, Public, HideBySig
+    Det(Vector IsConst, Vector IsConst, Vector IsConst): PrivateScope, Public, Static, HideBySig
+    Lerp(Vector, Vector, Single): PrivateScope, Public, Static, HideBySig
+    DistanceSquared(Vector, Vector): PrivateScope, Public, Static, HideBySig
+    AsColour(): PrivateScope, Public, HideBySig
+    Show(tvec3<float\,0>): PrivateScope, Public, Static, HideBySig
+    Show(tvec2<float\,0>): PrivateScope, Public, Static, HideBySig
+    Show(String): PrivateScope, Public, HideBySig
+    Show(): PrivateScope, Public, HideBySig
+    IsZero(): PrivateScope, Public, HideBySig
+    isNull(): PrivateScope, Public, HideBySig
+    isNullorZero(): PrivateScope, Public, HideBySig
+    Clamp(Single, Single): PrivateScope, Public, HideBySig
+    Clamp(Single): PrivateScope, Public, HideBySig
+    Distance(Vector): PrivateScope, Public, HideBySig
+    Distance(Vector, Vector): PrivateScope, Public, Static, HideBySig
+    DistanceToPlane(Vector, Vector, Single): PrivateScope, Public, Static, HideBySig
+    PointOnPlane(Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    distance(Vector): PrivateScope, Public, HideBySig
+    DrawAsPointRaw(Colour, Single): PrivateScope, Public, HideBySig
+    DrawAs(String, Colour, Colour): PrivateScope, Public, HideBySig
+    DrawAs(String, Colour): PrivateScope, Public, HideBySig
+    DrawAs(String, Colour, Single): PrivateScope, Public, HideBySig
+    DrawTo(Vector, Colour, Colour): PrivateScope, Public, HideBySig
+    DrawTo(Vector, Colour): PrivateScope, Public, HideBySig
+    DrawTo(Vector, String, Colour, Colour, Single): PrivateScope, Public, HideBySig
+    DrawTo(Vector, String, Colour, Single): PrivateScope, Public, HideBySig
+    to2D(): PrivateScope, Public, HideBySig
+    WithInTriangle2D(Vector, Vector, Vector): PrivateScope, Public, HideBySig
+    GetNormal2D(Vector, Vector): PrivateScope, Public, Static, HideBySig
+    lengthSquared2D(): PrivateScope, Public, HideBySig
+    length2D(): PrivateScope, Public, HideBySig
+    perpDot2D(Vector): PrivateScope, Public, HideBySig
+    CrossProduct2DScaler(Vector&, Vector&): PrivateScope, Public, Static, HideBySig
+    normalize2D(): PrivateScope, Public, HideBySig
+    Dot2D(Vector, Vector): PrivateScope, Public, Static, HideBySig
+    CrossProduct2DPerp(Vector&, Single, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    SignedTriangleArea2D(Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    Cross2D(Vector, Single): PrivateScope, Public, Static, HideBySig
+    Cross2D(Single, Vector): PrivateScope, Public, Static, HideBySig
+    Cross2D(Vector, Vector): PrivateScope, Public, Static, HideBySig
+    PointToTriangleProjection2D(Vector, Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    Perpendicular2D(Vector, Vector): PrivateScope, Public, Static, HideBySig
+    BarycentricCoordinates2DTriangle(Vector, Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    BarycentricCoordinates2D(Vector, Vector, Vector, Single&, Single&): PrivateScope, Public, Static, HideBySig
+    PointToLine3D(Vector, Vector, Vector): PrivateScope, Public, HideBySig
+    BarycentricCoordinates3D(Vector, Vector, Vector, Single&, Single&): PrivateScope, Public, Static, HideBySig
+    ProjecToLine2D(Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    ProjecToPlane2D(Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    Display(String, Colour, Single): PrivateScope, Public, HideBySig
+    Display(String): PrivateScope, Public, HideBySig
+    Display(String, Single): PrivateScope, Public, HideBySig
+    DisplayNDC(String, Single, Single, Single): PrivateScope, Public, HideBySig
+    DisplayAs(String, Single): PrivateScope, Public, HideBySig
+    DisplayAs(String): PrivateScope, Public, HideBySig
+    DisplayAs(String, Colour): PrivateScope, Public, HideBySig
+    DisplayAs(String, Colour, Single): PrivateScope, Public, HideBySig
+    DisplayAt(String, Vector, Single): PrivateScope, Public, HideBySig
+    Area(Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    AreaSigned(Vector, Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    MultiplyMatrix(tmat3x3<float\,0>*, tmat3x3<float\,0>, Single): PrivateScope, Public, Static, HideBySig
+    W(Single): PrivateScope, Public, HideBySig
+    CrossProductMatrix(tmat3x3<float\,0>*, Vector): PrivateScope, Public, Static, HideBySig
+    DebugMatrix(tmat3x3<float\,0>* IsImplicitlyDereferenced, String): PrivateScope, Public, Static, HideBySig
+    Random(): PrivateScope, Public, Static, HideBySig
+    RandomPosition(): PrivateScope, Public, Static, HideBySig
+    Subtract(Vector&, Vector&, Vector&): PrivateScope, Public, Static, HideBySig
+    Min(Vector, Vector): PrivateScope, Public, Static, HideBySig
+    Max(Vector, Vector): PrivateScope, Public, Static, HideBySig
+    ToVectorList(Single[]): PrivateScope, Public, Static, HideBySig
+    DistToSegment(Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    LinePlaneIntersection(Vector&, Vector, Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    InsideTriangle(Vector, Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    IsNearZero(): PrivateScope, Public, HideBySig
+    IsNearZero(Single): PrivateScope, Public, Static, HideBySig
+    debugVec(): PrivateScope, Public, HideBySig
+    debugVec(String): PrivateScope, Public, HideBySig
+    debugVec(tvec4<float\,0>): PrivateScope, Public, Static, HideBySig
+    debugVec(tvec3<float\,0>): PrivateScope, Public, Static, HideBySig
+Class Antimatter.Games.Velocity: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Antimatter.Games.Velocity ByRef): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector, Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Vector linear : Public
+    Antimatter.Games.Vector angular : Public
+    Antimatter.Games.Velocity Zero : Public, Static
+  Methods:
+    AtPoint(Vector): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Show(String): PrivateScope, Public, HideBySig
+    Show(): PrivateScope, Public, HideBySig
+    Negated(): PrivateScope, Public, HideBySig
+    op_Subtraction(Velocity IsConst, Velocity IsConst): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_UnaryNegation(Velocity): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(Velocity IsConst, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(Velocity IsConst, Velocity IsConst): PrivateScope, Public, Static, HideBySig, SpecialName
+    Divide(Velocity IsConst, Single): PrivateScope, Public, Static, HideBySig
+    Divide(Velocity IsConst, Velocity IsConst): PrivateScope, Public, Static, HideBySig
+    op_Multiply(Single, Velocity): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Velocity, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Velocity IsConst, Velocity IsConst): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Velocity IsConst, Velocity IsConst): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Antimatter.Games.Mat2x2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector, Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single m00 : Public
+    Single m01 : Public
+    Single m10 : Public
+    Single m11 : Public
+  Properties:
+    Antimatter.Games.Vector Ycolumn 'get set' : 
+    Antimatter.Games.Vector Xcolumn 'get set' : 
+  Methods:
+    Set(Single): PrivateScope, Public, HideBySig
+    op_Multiply(Vector): PrivateScope, Public, HideBySig, SpecialName
+    op_Multiply(Mat2x2, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Mat2x2, Mat2x2): PrivateScope, Public, Static, HideBySig, SpecialName
+    Show(tmat2x2<float\,0>): PrivateScope, Public, Static, HideBySig
+    Show(): PrivateScope, Public, HideBySig
+    glm(tmat2x2<float\,0>*): PrivateScope, Public, HideBySig
+    Determinate(): PrivateScope, Public, HideBySig
+    get_Xcolumn(): PrivateScope, Public, HideBySig, SpecialName
+    set_Xcolumn(Vector): PrivateScope, Public, HideBySig, SpecialName
+    get_Ycolumn(): PrivateScope, Public, HideBySig, SpecialName
+    set_Ycolumn(Vector): PrivateScope, Public, HideBySig, SpecialName
+Class Antimatter.Games.Transform2D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.Mat2x2
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Vector position : Public
+    Antimatter.Games.Vector scale : Public
+    Single rotation : Public
+    Single sort : Public
+  Methods:
+    Rotate(Vector): PrivateScope, Public, HideBySig
+    Translate(Vector): PrivateScope, Public, HideBySig
+    Scale(Vector): PrivateScope, Public, HideBySig
+    Transform(Vector): PrivateScope, Public, HideBySig
+    UpdateMatrix(): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Quaternion: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(glm.tmat4x4<float\,0>): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(glm.tquat<float\,0>): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single x : Public
+    Single y : Public
+    Single z : Public
+    Single w : Public
+    Antimatter.Games.Quaternion identity : Public, Static
+  Properties:
+    Antimatter.Games.Quaternion Identity 'get ' : 
+  Methods:
+    Conjugate(Quaternion): PrivateScope, Public, Static, HideBySig
+    Conjugate(): PrivateScope, Public, HideBySig
+    inverse(): PrivateScope, Public, HideBySig
+    get_Identity(): PrivateScope, Public, Static, HideBySig, SpecialName
+    ToMatrix(tmat4x4<float\,0>*): PrivateScope, Public, HideBySig
+    glm(tquat<float\,0>*): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Print(): PrivateScope, Public, HideBySig
+    op_Multiply(Quaternion, Quaternion): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Quaternion, Vector): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Quaternion, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(Quaternion, Quaternion): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(Quaternion, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    Divide(Quaternion, Quaternion): PrivateScope, Public, Static, HideBySig
+    Divide(Quaternion, Single): PrivateScope, Public, Static, HideBySig
+    Multiply(Quaternion, Quaternion): PrivateScope, Public, Static, HideBySig
+    Multiply(Quaternion, Single): PrivateScope, Public, Static, HideBySig
+    LengthSquared(): PrivateScope, Public, HideBySig
+    LengthSquared(Quaternion): PrivateScope, Public, Static, HideBySig
+    Length(): PrivateScope, Public, HideBySig
+    Length(Quaternion): PrivateScope, Public, Static, HideBySig
+    Normalize(): PrivateScope, Public, HideBySig
+    Normalize(Quaternion): PrivateScope, Public, Static, HideBySig
+    FromEulerAngles(Vector): PrivateScope, Public, HideBySig
+    FromEulerAngles(Single, Single, Single): PrivateScope, Public, HideBySig
+    op_Implicit(Vector): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(tquat<float\,0>*, Quaternion): PrivateScope, Public, Static, HideBySig, SpecialName
+    RotateVector(Vector): PrivateScope, Public, HideBySig
+    op_Addition(Quaternion, Quaternion): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(Quaternion, Quaternion): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Quaternion, Quaternion): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_UnaryNegation(Quaternion): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(Quaternion, Quaternion): PrivateScope, Public, Static, HideBySig, SpecialName
+    FromMatrix(tmat4x4<float\,0>): PrivateScope, Public, Static, HideBySig
+    EulerAngleDegrees(Vector): PrivateScope, Public, Static, HideBySig
+    EulerAngleDegrees(Single, Single, Single): PrivateScope, Public, Static, HideBySig
+    ToEulerAngles(Quaternion): PrivateScope, Public, Static, HideBySig
+    RotationAxis(Vector, Single): PrivateScope, Public, HideBySig
+    EulerAngleRadians(Vector): PrivateScope, Public, Static, HideBySig
+    RotationXYZ(Vector): PrivateScope, Public, Static, HideBySig
+    RotationZYX(Vector): PrivateScope, Public, Static, HideBySig
+    Concatenate(Quaternion, Quaternion): PrivateScope, Public, Static, HideBySig
+    Add(Quaternion, Quaternion): PrivateScope, Public, Static, HideBySig
+Class Antimatter.Games.Transform: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    System.String name : Public
+    Antimatter.Games.Transform parent : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Transform] children : Public
+    Antimatter.glx.Transform* gxtransform : Public
+  Properties:
+    Antimatter.Games.Vector Right 'get set' : 
+    Antimatter.Games.Vector Up 'get set' : 
+    Antimatter.Games.Vector Forward 'get set' : 
+    Antimatter.Games.Vector RightDirection 'get set' : 
+    Antimatter.Games.Vector UpDirection 'get set' : 
+    Antimatter.Games.Vector ForwardDirection 'get set' : 
+    Antimatter.Games.Transform Parent 'get set' : 
+    Antimatter.Games.Vector LocalScale 'get set' : 
+    Antimatter.Games.Quaternion LocalRotation 'get set' : 
+    Antimatter.Games.Vector LocalPosition 'get set' : 
+    Antimatter.Games.Vector LocalEulerAngles 'get set' : 
+    Antimatter.Games.Vector EulerAngles 'get set' : 
+    Antimatter.Games.Vector Scale 'get set' : 
+    Antimatter.Games.Quaternion Rotation 'get set' : 
+    Antimatter.Games.Vector Position 'get set' : 
+    Boolean IsStatic 'get set' : 
+  Methods:
+    Clone(Transform): PrivateScope, Public, Static, HideBySig
+    glm(): PrivateScope, Public, HideBySig
+    Inverse(tmat4x4<float\,0>*): PrivateScope, Public, HideBySig
+    op_Multiply(Transform, tvec4<float\,0>): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(tvec4<float\,0>, Transform): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Vector, Transform): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Transform, Vector): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsStatic(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsStatic(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+    set_Position(Vector): PrivateScope, Public, HideBySig, SpecialName
+    get_Rotation(): PrivateScope, Public, HideBySig, SpecialName
+    set_Rotation(Quaternion): PrivateScope, Public, HideBySig, SpecialName
+    get_Scale(): PrivateScope, Public, HideBySig, SpecialName
+    set_Scale(Vector): PrivateScope, Public, HideBySig, SpecialName
+    get_EulerAngles(): PrivateScope, Public, HideBySig, SpecialName
+    set_EulerAngles(Vector): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalEulerAngles(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalEulerAngles(Vector): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalPosition(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalPosition(Vector): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalRotation(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalRotation(Quaternion): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalScale(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalScale(Vector): PrivateScope, Public, HideBySig, SpecialName
+    set_Parent(Transform): PrivateScope, Public, HideBySig, SpecialName
+    get_Parent(): PrivateScope, Public, HideBySig, SpecialName
+    SetParent(Transform): PrivateScope, Public, HideBySig
+    CreateEulerAngles(Vector): PrivateScope, Public, Static, HideBySig
+    SetDirection(Vector, Vector): PrivateScope, Public, HideBySig
+    GetDirection(Vector): PrivateScope, Public, HideBySig
+    GetDirection(Single, Single, Single): PrivateScope, Public, HideBySig
+    get_ForwardDirection(): PrivateScope, Public, HideBySig, SpecialName
+    set_ForwardDirection(Vector): PrivateScope, Public, HideBySig, SpecialName
+    get_UpDirection(): PrivateScope, Public, HideBySig, SpecialName
+    set_UpDirection(Vector): PrivateScope, Public, HideBySig, SpecialName
+    get_RightDirection(): PrivateScope, Public, HideBySig, SpecialName
+    set_RightDirection(Vector): PrivateScope, Public, HideBySig, SpecialName
+    get_Forward(): PrivateScope, Public, HideBySig, SpecialName
+    set_Forward(Vector): PrivateScope, Public, HideBySig, SpecialName
+    get_Up(): PrivateScope, Public, HideBySig, SpecialName
+    set_Up(Vector): PrivateScope, Public, HideBySig, SpecialName
+    get_Right(): PrivateScope, Public, HideBySig, SpecialName
+    set_Right(Vector): PrivateScope, Public, HideBySig, SpecialName
+    TransformedArray(Vector[]): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Antimatter.Games.Pair: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Antimatter.Games.Transform, Antimatter.Games.Transform): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Transform a : Public
+    Antimatter.Games.Transform b : Public
+  Methods:
+    Equals(Transform, Transform): PrivateScope, Public, HideBySig
+    Contains(Transform): PrivateScope, Public, HideBySig
+    GetString(): PrivateScope, Public, HideBySig
+    op_Equality(Pair, Pair): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Antimatter.Games.RenderSetting: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Antimatter.glx.RenderSetting*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String name : Public
+    Int32 textureID : Public
+    Boolean lightingEnabled : Public
+    Boolean screenSpace : Public
+    Boolean wireFrame : Public
+    Boolean solid : Public
+    Boolean points : Public
+    Boolean disableCulling : Public
+    Boolean backFaceCulling : Public
+    Boolean frontFaceCulling : Public
+    Boolean drawAABB : Public
+    Boolean drawAABBinfront : Public
+    Boolean onTop : Public
+    Boolean is2d : Public
+  Methods:
+    ToGLX(RenderSetting*): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Draw: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.glx.Render* gxRender : Public
+    Antimatter.glx.Render2D* gxRender2D : Public
+    Antimatter.Games.Draw draw : Public, Static
+  Methods:
+    ReadPixel(Single, Single): PrivateScope, Public, Static, HideBySig
+    DrawDeviceCoord(tvec2<float\,0>*, Single, Single, Single): PrivateScope, Public, Static, HideBySig
+    Mesh(Transform, VAO*, RenderSetting, Colour, Int32): PrivateScope, Public, Static, HideBySig
+    Triangle(Vector, Vector, Vector, Colour): PrivateScope, Public, Static, HideBySig
+    Line(Vector, Vector, Colour): PrivateScope, Public, Static, HideBySig
+    Line(Vector, Vector, Colour, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    Text(Single, Single, Colour, Single, Single, String[]): PrivateScope, Public, Static, HideBySig
+    Text(Single, Single, Single, Single, String[]): PrivateScope, Public, Static, HideBySig
+    Text(Single, Single, Colour, Single, String[]): PrivateScope, Public, Static, HideBySig
+    Text(Single, Single, Colour, String[]): PrivateScope, Public, Static, HideBySig
+    Text(Single, Single, String[]): PrivateScope, Public, Static, HideBySig
+    RenderString(String, Single, Single, Colour, Single, Single): PrivateScope, Public, Static, HideBySig
+    TransformedText(String, Vector, Colour, Transform, Single, Single): PrivateScope, Public, Static, HideBySig
+    TransformBillboard(String, Transform, Vector, Colour, Single, Single): PrivateScope, Public, Static, HideBySig
+    DrawAxis(Transform): PrivateScope, Public, Static, HideBySig
+    TextInWorld(String, Vector, Colour, Single, Single, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    TextBillboardInWorld(String, Vector, Colour, Single): PrivateScope, Public, Static, HideBySig
+    TextBillboardInWorld(String, Vector, Colour, Single, Single): PrivateScope, Public, Static, HideBySig
+    DebugLine(Vector, Vector, Colour, Transform): PrivateScope, Public, Static, HideBySig
+    DebugLine(Vector, Vector, Colour, Colour, Single): PrivateScope, Public, Static, HideBySig
+    DebugLine(Vector, Vector, Colour, Colour): PrivateScope, Public, Static, HideBySig
+    DebugLine(Vector, Vector, Colour): PrivateScope, Public, Static, HideBySig
+    DebugVector(Vector, Colour, Vector, Colour, Transform): PrivateScope, Public, Static, HideBySig
+    DebugVector(Vector, Vector, Colour, Transform): PrivateScope, Public, Static, HideBySig
+    DebugVector(Vector, Vector, Colour, String, Colour, Single): PrivateScope, Public, Static, HideBySig
+    DebugVector(Vector, Vector, Colour): PrivateScope, Public, Static, HideBySig
+    DebugVector(Vector, Vector, Colour, String, Single): PrivateScope, Public, Static, HideBySig
+    ListIndices(List`1, Colour, Single): PrivateScope, Public, Static, HideBySig
+    ShowAxis(Transform, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    DisplayAxis(Transform): PrivateScope, Public, Static, HideBySig
+    DebugPointRaw(Vector, Colour, Single): PrivateScope, Public, Static, HideBySig
+    DebugPointRaw2D(Vector, Colour, Single): PrivateScope, Public, Static, HideBySig
+    DebugPointRaw2DOrtho(Vector, Colour, Single): PrivateScope, Public, Static, HideBySig
+    DrawPolygon2D(Vector, Colour, Vector, Colour, Vector, Colour, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    DrawTriangle2D(Vector, Colour, Colour, Colour, Single, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    Set2DLightPosition(Vector): PrivateScope, Public, Static, HideBySig
+    Diamond2D(Single, Single, Colour, Single, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    Diamond2D(Vector, Colour, Single, Colour): PrivateScope, Public, Static, HideBySig
+    Diamond2D(Vector, Colour, Single, Single): PrivateScope, Public, Static, HideBySig
+    Line2D(Vector, Vector, Colour, Colour, Single, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    Buffers2D(): PrivateScope, Public, Static, HideBySig
+    Start2DGlowBuffer(): PrivateScope, Public, Static, HideBySig
+    EnableGlowBuffer(): PrivateScope, Public, Static, HideBySig
+    DisableGlowBuffer(): PrivateScope, Public, Static, HideBySig
+    ReadPixel2D(Single, Single): PrivateScope, Public, Static, HideBySig
+Class Antimatter.Games.Vertex: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.Vector
+    Void .ctor(Antimatter.Games.Vector, Antimatter.Games.Colour, System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector, Antimatter.Games.Colour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector, Antimatter.Games.Colour, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector, Int32, Antimatter.Games.Colour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector, Int32, Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 index : Public
+    Antimatter.Games.Colour colour : Public
+    System.String text : Public
+    Antimatter.Games.Vector vertexNormal : Public
+  Methods:
+    Load(String, Colour, Int32): PrivateScope, Public, HideBySig
+    Load(String, Colour): PrivateScope, Public, HideBySig
+    Draw(String, Colour): PrivateScope, Public, HideBySig
+    Draw(Colour): PrivateScope, Public, HideBySig
+    Draw(String): PrivateScope, Public, HideBySig
+    Draw(): PrivateScope, Public, HideBySig
+    Draw(Single): PrivateScope, Public, HideBySig
+    DrawLine(Vertex): PrivateScope, Public, HideBySig
+Class Antimatter.Games.SupportPoint: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.Vertex
+    Void .ctor(Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector, Antimatter.Games.Vertex, Antimatter.Games.Vertex): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Vertex vertexA : Public
+    Antimatter.Games.Vertex vertexB : Public
+  Methods:
+    DebugDraw(String, Colour, Single): PrivateScope, Public, HideBySig
+    Is(SupportPoint): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Shape2D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, Antimatter.Games.Vector[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String name : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Vector] points : Public
+    Single inertiaTensor : Public
+    Single area : Public
+    Boolean debug : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Shape2D] Shapes2d : Public, Static
+    Antimatter.Games.Shape2D _box : Public, Static
+    Antimatter.Games.Shape2D _triangle : Public, Static
+  Properties:
+    Antimatter.Games.Shape2D Triangle 'get ' : 
+    Antimatter.Games.Shape2D Box 'get ' : 
+  Methods:
+    CalculateArea(): PrivateScope, Public, HideBySig
+    ComputeMassProperties(): PrivateScope, Public, HideBySig
+    get_Box(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Triangle(): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Antimatter.Games.Edge: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Antimatter.Games.Vector, Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vertex, Antimatter.Games.Vertex): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Vertex a : Public
+    Antimatter.Games.Vertex b : Public
+    Antimatter.Games.Vertex max : Public
+  Methods:
+    edgeVector(): PrivateScope, Public, HideBySig
+    dot2d(Vector): PrivateScope, Public, HideBySig
+    Draw(Colour, Colour): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Collider2d: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, Antimatter.Games.Shape2D, Antimatter.Games.Colour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Antimatter.Games.Shape2D): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Shape2D shape : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Vertex] worldPoints : Public
+    Antimatter.Games.Transform2D transform : Public
+    Antimatter.Games.Colour colour : Public
+    System.String name : Public
+  Methods:
+    GetNeighbourVertices(Int32, Vertex&, Vertex&): PrivateScope, Public, HideBySig
+    DebugClosestEdge(Int32, Vector): PrivateScope, Public, HideBySig
+    GetClosestEdge(Int32, Vector): PrivateScope, Public, HideBySig
+    GetClosestEdge(Int32, Vector, Vertex&, Vertex&): PrivateScope, Public, HideBySig
+    GetSupportPoint(Vector): PrivateScope, Public, HideBySig
+    DrawIndex(Int32, Colour, Single): PrivateScope, Public, HideBySig
+    DrawIndices(Colour, Single): PrivateScope, Public, HideBySig
+    DrawDots(Colour, Single): PrivateScope, Public, HideBySig
+    Update(): PrivateScope, Public, HideBySig
+    Debug(Single): PrivateScope, Public, HideBySig
+    Draw(): PrivateScope, Public, HideBySig
+    Draw(Colour): PrivateScope, Public, HideBySig
+    DrawAsCube(Colour): PrivateScope, Public, HideBySig
+    DrawAsTriangle(Colour): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Physics2d: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Antimatter.Games.Collider2d): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Shape2D shape : Public
+    Antimatter.Games.Transform2D transform : Public
+    Antimatter.Games.Collider2d collider : Public
+    Antimatter.Games.Vector position : Public
+    Antimatter.Games.Vector velocity : Public
+    Antimatter.Games.Vector gravity : Public
+    Antimatter.Games.Vector force : Public
+    Single acceleration : Public
+    Single mass : Public
+    Single inverseMass : Public
+    Single density : Public
+    Single restitution : Public
+    Single staticFriction : Public
+    Single dynamicFriction : Public
+    Single bounce : Public
+    Single orientation : Public
+    Single angularVelocity : Public
+    Single torque : Public
+    Single momentOfInertia : Public
+    Single inertiaTensor : Public
+    Single inverseInertiaTensor : Public
+    Boolean kinematic : Public
+    Boolean isStatic : Public
+    Boolean collidable : Public
+    Boolean sleep : Public
+  Methods:
+    UpdateForces(): PrivateScope, Public, HideBySig
+    ReverseGravity(): PrivateScope, Public, HideBySig
+    IntegrateVelocities(): PrivateScope, Public, HideBySig
+    IntegrateTransform(): PrivateScope, Public, HideBySig
+    ApplyDampening(): PrivateScope, Public, HideBySig
+    SetMassProperties(Single): PrivateScope, Public, HideBySig
+    ApplyImpulse(Vector, Vector): PrivateScope, Public, HideBySig
+    UpdateVelocities(): PrivateScope, Public, HideBySig
+    IntegratePosition(): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Contact2d: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Physics2d a : Public
+    Antimatter.Games.Physics2d b : Public
+    Antimatter.Games.Vector point1 : Public
+    Antimatter.Games.Vector point2 : Public
+    Antimatter.Games.Vector localA : Public
+    Antimatter.Games.Vector localB : Public
+    Antimatter.Games.Vector normal : Public
+    Single depth : Public
+    Single sumImpulse : Public
+    Single sumTangent : Public
+    Single velocityBias : Public
+    Boolean persistant : Public
+    Boolean debug : Public
+    Single kMass : Public
+    Single tMass : Public
+    Single mixedRestitution : Public
+    Single mixedStaticFriction : Public
+    Single mixedDynamicFriction : Public
+    Single restThreshold : Public
+    Int32 indexA : Public
+    Int32 indexB : Public
+    Single GlobalRestingThreshold : Public, Static
+  Methods:
+    Initialize(Vector, Single, Vector, Vector): PrivateScope, Public, HideBySig
+    ApplyImpulse(): PrivateScope, Public, HideBySig
+    PositionalCorrection(): PrivateScope, Public, HideBySig
+Struct DeferredShader: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Class Antimatter.Games.GImage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Antimatter.glx.Texture* nativeTexture : Public
+    UInt32 ID : Public
+    System.String filePath : Public
+    UInt32 globalID : Public
+  Methods:
+    Load(String): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Antimatter.Games.Texture: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 id : Public
+    System.String filePath : Public
+    System.Collections.Generic.List`1[Antimatter.Games.GImage] Images : Public, Static
+  Methods:
+    Load(String): PrivateScope, Public, HideBySig
+    GetTexture(String): PrivateScope, Public, Static, HideBySig
+Class Antimatter.Games.ObjectSelection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Generic.List`1[Antimatter.Games.Colour] colourIDs : Public, Static
+    Single R : Public, Static
+    Single G : Public, Static
+    Single B : Public, Static
+    Single A : Public, Static
+    Single increment : Public, Static
+  Methods:
+    IsID(Colour, Colour): PrivateScope, Public, Static, HideBySig
+    ContainsID(Colour): PrivateScope, Public, Static, HideBySig
+    CreateColourID(): PrivateScope, Public, Static, HideBySig
+Class Antimatter.Games.Thing: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.Transform
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String fullPath : Public
+    Antimatter.Games.Texture texture : Public
+    Antimatter.Games.Colour colour : Public
+    Antimatter.Games.Colour defaultColor : Public
+    Int32 selectionID : Public
+    Boolean visible : Public
+    Boolean isTextured : Public
+    Boolean isSprite : Public
+    Boolean ScreenSpace : Public
+    Boolean selectable : Public
+    Boolean selected : Public
+    Boolean debug : Public
+    Antimatter.Games.RenderSetting renderSettings : Public
+    Antimatter.Games.Mode mode : Public
+    Int32 debugCount : Public
+    Int32 debugIndex : Public
+  Methods:
+    GenerateID(): PrivateScope, Public, HideBySig
+    SetColour(Colour): PrivateScope, Public, HideBySig
+    Draw(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetCollisionPoints(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadTexture(String): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Sprite: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.Thing
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.glx.VAO* vao : Public
+    Antimatter.Games.Transform2D transform2D : Public
+    Boolean billboard : Public
+  Methods:
+    AddTexture(String): PrivateScope, Public, HideBySig
+    Draw(): PrivateScope, Public, Virtual, HideBySig
+Class Antimatter.Games.Plane: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Antimatter.Games.Vector, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single x : Public
+    Single y : Public
+    Single z : Public
+    Single distance : Public
+  Properties:
+    Antimatter.Games.Vector normal 'get set' : 
+  Methods:
+    get_normal(): PrivateScope, Public, HideBySig, SpecialName
+    set_normal(Vector): PrivateScope, Public, HideBySig, SpecialName
+    ConstructFromPointNormal(Vector, Vector): PrivateScope, Public, HideBySig
+    ConstructFromPointVectors(Vector, Vector, Vector): PrivateScope, Public, HideBySig
+    Normalize(): PrivateScope, Public, HideBySig
+    FromPoints(Vector, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    IntersectLine(Vector, Vector, Boolean* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    IntersectLine(Vector, Vector): PrivateScope, Public, HideBySig
+    IntersectLineRatio(Vector, Vector): PrivateScope, Public, HideBySig
+    SignedDistance(Vector): PrivateScope, Public, HideBySig
+    UnsignedDistance(Vector): PrivateScope, Public, HideBySig
+    ClosestPoint(Vector): PrivateScope, Public, HideBySig
+    Dot(Plane, tvec4<float\,0>): PrivateScope, Public, HideBySig
+    DotCoord(Plane, Vector): PrivateScope, Public, HideBySig
+    DotNormal(Plane, Vector): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Grid: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.Graphic
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String visual : Public
+    Int32 granularity : Public
+    Antimatter.Games.Colour colour : Public
+    Int32 Scale : Public
+    Single visualSize : Public
+    Boolean DrawX : Public
+    Boolean DrawY : Public
+    Boolean DrawZ : Public
+    Boolean DrawOrigin : Public
+  Methods:
+    DrawGrid(): PrivateScope, Public, HideBySig
+    DrawLine(Vector, Int32, Colour, Single, String): PrivateScope, Public, HideBySig
+Class Antimatter.Games.VertexInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Antimatter.Games.Vertex, Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vertex): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Vertex pos : Public
+    Antimatter.Games.Vector normal : Public
+    Antimatter.Games.Colour colour : Public
+Class Antimatter.Games.Face: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(UInt32, UInt32, UInt32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 A : Public
+    UInt32 B : Public
+    UInt32 C : Public
+    Antimatter.Games.VertexInfo vertexA : Public
+    Antimatter.Games.VertexInfo vertexB : Public
+    Antimatter.Games.VertexInfo vertexC : Public
+    Antimatter.Games.Vector faceNormal : Public
+    Antimatter.Games.Plane plane : Public
+    Antimatter.Games.Vector edge0 : Public
+    Antimatter.Games.Vector edge1 : Public
+    Antimatter.Games.Vector centre : Public
+    Antimatter.Games.Transform transform : Public
+  Methods:
+    Encloses(Vector): PrivateScope, Public, HideBySig
+    SetCentre(): PrivateScope, Public, HideBySig
+    Initialize(): PrivateScope, Public, HideBySig
+    PointFromST(Single, Single): PrivateScope, Public, HideBySig
+    NormalFromST(Single, Single): PrivateScope, Public, HideBySig
+    Intersect(Vector&, Vector&, Transform, Single, Single&, Vector&): PrivateScope, Public, HideBySig
+    draw(Transform, Colour): PrivateScope, Public, HideBySig
+Class Antimatter.Games.PolyMesh: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String name : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Vertex] points : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Vector] normals : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Face] faces : Public
+    System.Collections.Generic.List`1[Antimatter.Games.VertexInfo] vertices : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Vector] faceNormals : Public
+  Methods:
+    GetVertex(UInt32): PrivateScope, Public, HideBySig
+    SetFaceVertices(): PrivateScope, Public, HideBySig
+    SetFaceNormals(): PrivateScope, Public, HideBySig
+    Init(): PrivateScope, Public, HideBySig
+    DrawFaces(Transform, Colour): PrivateScope, Public, HideBySig
+    DrawFaceNormals(Transform, Colour): PrivateScope, Public, HideBySig
+    DrawNormals(Transform, Colour): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Ray: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Antimatter.Games.Vector, Antimatter.Games.Vector, Antimatter.Games.Colour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector, Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Vector start : Public
+    Antimatter.Games.Vector end : Public
+    Antimatter.Games.Vector direction : Public
+    Single maxDistance : Public
+    Single distance : Public
+    Boolean hit : Public
+    Boolean checkInterior : Public
+    Antimatter.Games.Vector hitPoint : Public
+    Antimatter.Games.Vector N : Public
+    Antimatter.Games.Colour colour : Public
+  Methods:
+    Draw(): PrivateScope, Public, HideBySig
+    PlaneIntersect(Vector, Vector, Transform): PrivateScope, Public, HideBySig
+Class Antimatter.Games.TextureUV: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single U : Public
+    Single V : Public
+Class Antimatter.Games.XFileLoader: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 bufferID : Public
+    UInt32 dataCount : Public
+    Boolean loaded : Public
+    Boolean debug : Public
+    Single Frame : Public
+    Int32 bufferPosID : Public
+    System.String name : Public
+    System.String filePath : Public
+    System.Text.RegularExpressions.Regex regexInt : Public
+    System.Collections.Generic.List`1[System.Single] vertexData : Public
+    System.Collections.Generic.List`1[System.UInt32] indexList : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Vector] normals : Public
+    System.Collections.Generic.List`1[Antimatter.Games.TextureUV] UVs : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Vector] faceNormals : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Face] faces : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Vertex] vertices : Public
+  Methods:
+    GetDataSize(): PrivateScope, Public, HideBySig
+    CreateVertexNormals(): PrivateScope, Public, HideBySig
+    BuildInterleaveData(): PrivateScope, Public, HideBySig
+    TestInterleave(): PrivateScope, Public, HideBySig
+    LoadMesh(String, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Shape: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single volume : Public
+    Single mass : Public
+    Single radius : Public
+    Antimatter.Games.Vector centreOfMass : Public
+    Antimatter.Games.Vector inertiaDiag : Public
+    System.String name : Public
+    System.String filePath : Public
+    System.Collections.Generic.List`1[System.Single] Data : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Vertex] points : Public
+    System.Collections.Generic.List`1[System.UInt32] IndexList : Public
+    System.Collections.Generic.List`1[Antimatter.Games.TextureUV] UVs : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Vector] FaceNormals : Public
+    System.Collections.Generic.List`1[System.Single] ColourData : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Vector] Normals : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Face] Faces : Public
+    Single[] interLeavedData : Public
+    System.ValueType dataPointer IntPtr IsBoxed : Public
+    System.ValueType indexPointer IntPtr IsBoxed : Public
+    UInt32 ID : Public
+    Antimatter.glx.VAO* vao : Public
+    Antimatter.Games.PolyMesh polymesh : Public
+    Boolean Debug : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Shape] Shapes : Public, Static
+    UInt32 _ShapeIndex : Public, Static
+  Methods:
+    MeshFromXFile(String): PrivateScope, Public, Static, HideBySig
+    BuildInterleaveData(): PrivateScope, Public, HideBySig
+    DrawBounds(Vector, Vector, Colour): PrivateScope, Public, HideBySig
+    ComputeBounds(Transform, Vector&, Vector&): PrivateScope, Public, HideBySig
+    GetVolume(): PrivateScope, Public, HideBySig
+    GetCenterOfMass(): PrivateScope, Public, HideBySig
+    Determinant(Vector, Vector, Vector): PrivateScope, Public, HideBySig
+    SetFile(String): PrivateScope, Public, HideBySig
+    AddShape(Shape): PrivateScope, Public, Static, HideBySig
+    ContainsShape(String): PrivateScope, Public, Static, HideBySig
+    debugMe(String): PrivateScope, Public, HideBySig
+    UpdatedTransform(Transform): PrivateScope, Public, HideBySig
+    GetFarthestPointInDirection(Transform, Vector): PrivateScope, Public, HideBySig
+    GetRadius(): PrivateScope, Public, HideBySig
+    FromXFile(String): PrivateScope, Public, Static, HideBySig
+    SupportMapping(Vector): PrivateScope, Public, HideBySig
+Class Antimatter.Games.AABB: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Antimatter.Games.Vector, Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.AABB): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Shape, Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.List`1[Antimatter.Games.Vertex]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Vector centre : Public
+    Antimatter.Games.Vector extents : Public
+    Boolean debug : Public
+  Methods:
+    Debug(String): PrivateScope, Public, HideBySig
+    Draw(Colour): PrivateScope, Public, HideBySig
+    Draw(Vector, Vector, Colour): PrivateScope, Public, Static, HideBySig
+    Update(Vector): PrivateScope, Public, HideBySig
+    GetMin(): PrivateScope, Public, HideBySig
+    GetMax(): PrivateScope, Public, HideBySig
+    GetSize(): PrivateScope, Public, HideBySig
+    minkowskiDifference(AABB): PrivateScope, Public, HideBySig
+    Build(List`1): PrivateScope, Public, Static, HideBySig
+    Build(List`1): PrivateScope, Public, Static, HideBySig
+    ClosestPoint(Vector): PrivateScope, Public, HideBySig
+    Overlapping(AABB): PrivateScope, Public, HideBySig
+    Colliding(AABB): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Physics: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Antimatter.Games.Velocity ByRef): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Shape, Antimatter.Games.Transform): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Antimatter.Games.Shape shape : Public
+    Antimatter.Games.AABB aabb : Public
+    Antimatter.Games.Transform transform : Public
+    Antimatter.Games.Vector gravity : Public
+    Antimatter.Games.Vector com : Public
+    Antimatter.Games.Vector totalForce : Public
+    Antimatter.Games.Vector totalTorque : Public
+    Antimatter.Games.Vector avgAcceleration : Public
+    Antimatter.Games.Vector accleration : Public
+    Antimatter.Games.Vector minBounds : Public
+    Antimatter.Games.Vector maxBounds : Public
+    Antimatter.Games.Vector worldPosition : Public
+    Antimatter.Games.Quaternion worldRotation : Public
+    Antimatter.Games.Velocity velocity : Public
+    Single maxAngVel : Public
+    Single mass : Public
+    Single inverseMass : Public
+    Single density : Public
+    Single resititution : Public
+    Single staticFriction : Public
+    Single dynamicFriction : Public
+    Single friction : Public
+    Single timeStep : Public
+    Boolean isStatic : Public
+    Boolean isKinematic : Public
+    Boolean debug : Public
+    Boolean collidable : Public
+    Boolean enabled : Public
+    Boolean frozen : Public
+    Boolean cleanMomentmatrix : Public
+    Boolean usedampening : Public
+    Int32 integrationMode : Public
+    glm.tmat3x3<float\,0>* localInertiaMatrix : Public
+    glm.tmat3x3<float\,0>* inverseLocalInertiaMatrix : Public
+    Single _linearDamping : Public
+    Single _angularDamping : Public
+    Antimatter.Games.Vector Gravity : Public, Static
+    Boolean Break : Public, Static
+    Boolean Check : Public, Static
+  Properties:
+    Antimatter.Games.Quaternion worldOrientation 'get ' : 
+    glm.tmat3x3<float\,0>* localInertiaInverse 'get set' : 
+    glm.tmat3x3<float\,0> momentInertiaInverse 'get ' : 
+    glm.tmat3x3<float\,0> momentInertia 'get ' : 
+    glm.tmat3x3<float\,0>* localInertia 'get set' : 
+  Methods:
+    SetMassProperties(Single): PrivateScope, Public, HideBySig
+    DrawBounds(Colour, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    ApplyImpulse(Vector, Vector): PrivateScope, Public, HideBySig
+    ApplyMomentum(Vector, Vector): PrivateScope, Public, HideBySig
+    UpdateVelocities(): PrivateScope, Public, HideBySig
+    UpdateTransform(): PrivateScope, Public, HideBySig
+    ComputeMassProperties(Single): PrivateScope, Public, HideBySig
+    CancelLinearVelocity(): PrivateScope, Public, HideBySig
+    ComputeInertiaTensor(tmat3x3<float\,0>*, Single): PrivateScope, Public, HideBySig
+    GetBounds(): PrivateScope, Public, HideBySig
+    ApplyForces(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    IsMovable(): PrivateScope, Public, HideBySig
+    IsCollidable(): PrivateScope, Public, HideBySig
+    ReverseVelocity(): PrivateScope, Public, HideBySig
+    PointWorldToBody(Vector): PrivateScope, Public, HideBySig
+    PointBodyToWorld(Vector): PrivateScope, Public, HideBySig
+    VectorWorldToBody(Vector): PrivateScope, Public, HideBySig
+    VectorBodyToWorld(Vector): PrivateScope, Public, HideBySig
+    SetDamping(Single): PrivateScope, Public, HideBySig
+    SetLinearDampening(Single): PrivateScope, Public, HideBySig
+    SetAngularDampening(Single): PrivateScope, Public, HideBySig
+    ApplyLinearDamping(): PrivateScope, Public, HideBySig
+    ApplyAngularDamping(): PrivateScope, Public, HideBySig
+    ApplyDamping(Vector, Single): PrivateScope, Public, Static, HideBySig
+    get_localInertia(): PrivateScope, Public, HideBySig, SpecialName
+    set_localInertia(tmat3x3<float\,0>*): PrivateScope, Public, HideBySig, SpecialName
+    get_momentInertia(tmat3x3<float\,0>*): PrivateScope, Public, HideBySig, SpecialName
+    get_momentInertiaInverse(tmat3x3<float\,0>*): PrivateScope, Public, HideBySig, SpecialName
+    get_localInertiaInverse(): PrivateScope, Public, HideBySig, SpecialName
+    set_localInertiaInverse(tmat3x3<float\,0>*): PrivateScope, Public, HideBySig, SpecialName
+    get_worldOrientation(): PrivateScope, Public, HideBySig, SpecialName
+    Colliding(Physics): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Antimatter.Games.Mesh: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.Thing
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Shape shape : Public
+    Antimatter.Games.Physics physics : Public
+    Antimatter.Games.Graphic graphic : Public
+  Methods:
+    Support(Vector): PrivateScope, Public, HideBySig
+    RayCast(Vector&, Vector&, Single&, Vector&): PrivateScope, Public, HideBySig
+    Draw(): PrivateScope, Public, Virtual, HideBySig
+    DrawFaces(List`1, Colour): PrivateScope, Public, HideBySig
+    DrawFaces(Colour): PrivateScope, Public, HideBySig
+    GetTransformedVertex(Int32): PrivateScope, Public, HideBySig
+    GetTransformedPoints(): PrivateScope, Public, HideBySig
+    GetScaledPoints(): PrivateScope, Public, HideBySig
+    GetSurface(Vector): PrivateScope, Public, HideBySig
+    GetAssociatedFaces(Int32): PrivateScope, Public, HideBySig
+    DrawNormals(Colour): PrivateScope, Public, HideBySig
+    GetCollisionPoints(): PrivateScope, Public, Virtual, HideBySig
+    GetShapePoints(): PrivateScope, Public, HideBySig
+    GenerateFromXFile(String): PrivateScope, Public, HideBySig
+    Upcast(Physics): PrivateScope, Public, Static, HideBySig
+    Upcast(Transform): PrivateScope, Public, Static, HideBySig
+Class Antimatter.Games.Camera: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single Height : Public
+    Antimatter.Games.Vector offset : Public
+    Antimatter.Games.Transform eye : Public
+    Antimatter.Games.Transform target : Public
+  Methods:
+    DebugNativeCamera(): PrivateScope, Public, HideBySig
+Class Antimatter.Games.MainWindow: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Antimatter.glx.Core* gxCore : Public
+    Antimatter.Games.Vector MousePosition : Public
+    Int32 width : Public
+    Int32 height : Public
+    Double MouseDeltaX : Public
+    Double MouseDeltaY : Public
+    System.Collections.Generic.List`1[System.String] DropFiles : Public
+    Boolean Initialized : Public
+    System.String Title : Public
+    Antimatter.Games.MainWindow mainWindow : Public, Static
+  Methods:
+    HookEvents(): PrivateScope, Public, HideBySig
+    UnHookEvents(): PrivateScope, Public, HideBySig
+    SetWindowTitle(String): PrivateScope, Public, HideBySig
+    OnResize(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnFileDrop(List`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Antimatter.Games.Render: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Shape spriteShape : Public
+    Single movex : Public
+    Antimatter.Games.MainWindow window : Public
+    Antimatter.glx.Render* gxRenderer : Public
+    Antimatter.glx.Core* gxCore : Public
+    glm.tvec4<float\,0>* BackColour : Public
+    System.Collections.Generic.List`1[System.UInt32] textures : Public
+  Properties:
+    glm.tmat4x4<float\,0>* MVP 'get ' : 
+    Antimatter.Games.Render current 'get set' : 
+  Methods:
+    get_current(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_current(Render): PrivateScope, Public, Static, HideBySig, SpecialName
+    GetCurrentRender(): PrivateScope, Public, Static, HideBySig
+    SetCurrentRender(Render): PrivateScope, Public, Static, HideBySig
+    InitializeShaders(): PrivateScope, Public, HideBySig
+    AddSpriteToRender(String): PrivateScope, Public, Static, HideBySig
+    UpdateStaticSprite(Sprite&, String): PrivateScope, Public, Static, HideBySig
+    DrawFace(Face, Transform): PrivateScope, Public, Static, HideBySig
+    DrawFace(Face): PrivateScope, Public, Static, HideBySig
+    get_MVP(): PrivateScope, Public, HideBySig, SpecialName
+    SetProjection(Single, Int32, Int32, Single, Single): PrivateScope, Public, HideBySig
+    GetNDC(Vector): PrivateScope, Public, HideBySig
+    DebugVector(String, Vector, Colour, Single): PrivateScope, Public, Static, HideBySig
+    DrawVector(Vector, Vector, Colour): PrivateScope, Public, Static, HideBySig
+    DrawVector(Vector, Vector): PrivateScope, Public, Static, HideBySig
+    DrawText(String, Single): PrivateScope, Public, Static, HideBySig
+    DrawText(String, Single, Colour): PrivateScope, Public, Static, HideBySig
+    DrawText(String, Single, Colour, Single): PrivateScope, Public, Static, HideBySig
+    DrawText(String, Single, Single, Colour, Single, Single): PrivateScope, Public, Static, HideBySig
+    DebugText(Single, String[]): PrivateScope, Public, Static, HideBySig
+    DebugText(String, Single): PrivateScope, Public, Static, HideBySig
+    RenderPoint(Vector, Colour, Transform, Single, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    DrawPoint(Vector, Colour): PrivateScope, Public, Static, HideBySig
+    DrawPoint(Vector, Colour, Single): PrivateScope, Public, Static, HideBySig
+    DrawLink(Vector, Vector, Colour, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Get2DPoint(Vector): PrivateScope, Public, Static, HideBySig
+    Get3DPoint(Camera, Single, Single, Single): PrivateScope, Public, Static, HideBySig
+    Get3DPoint(Single, Single): PrivateScope, Public, Static, HideBySig
+    Get3DPoint(Vector): PrivateScope, Public, Static, HideBySig
+    ScreenToWorldRay(Single, Single): PrivateScope, Public, Static, HideBySig
+    GetDebugScene(): PrivateScope, Public, HideBySig
+    ReadPixel(Double, Double): PrivateScope, Public, Static, HideBySig
+    ReadColour(Double, Double): PrivateScope, Public, Static, HideBySig
+    SetDebugScene(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    CreateMouseRay(Single, Single): PrivateScope, Public, Static, HideBySig
+    DrawAxis(Transform): PrivateScope, Public, Static, HideBySig
+    DrawDebugAxis(Transform): PrivateScope, Public, Static, HideBySig
+    GetOpenGLError(): PrivateScope, Public, HideBySig
+    DrawLine(Vector, Vector, Colour): PrivateScope, Public, Static, HideBySig
+    DrawLine(Vector, Vector, Colour, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    DrawDebugLine(Vector, Vector, Colour): PrivateScope, Public, Static, HideBySig
+    RenderLine(Vector, Vector, Colour, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    RenderLine(Vector, Vector, Colour, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    RenderLine2D(Vector, Vector, Colour, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    SetLightPosition(Single, Single, Single): PrivateScope, Public, Static, HideBySig
+    SetLightIntensity(Single, Single, Single): PrivateScope, Public, HideBySig
+    SetAmbientLight(Single, Single, Single): PrivateScope, Public, HideBySig
+    SetAttenutation(Single, Single, Single, Single): PrivateScope, Public, HideBySig
+    SetBackGroundColour(Single, Single, Single, Single): PrivateScope, Public, HideBySig
+    ComputeDefaultCamera(): PrivateScope, Public, HideBySig
+    ComputeView(Camera): PrivateScope, Public, HideBySig
+    ComputeView(Transform, Vector): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Input: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Antimatter.Games.Mouse: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Double x : Public
+    Double y : Public
+    Int32 scroll : Public
+    Int32 buttonCode : Public
+    Int32 actionCode : Public
+    Int32 modCode : Public
+    Int32 deltaX : Public
+    Int32 deltaY : Public
+    Int32 zoom : Public
+    Antimatter.Games.Vector position : Public
+    Antimatter.Games.MouseButton button : Public
+    Antimatter.Games.MouseAction action : Public
+    Antimatter.Games.Mouse Default : Public, Static
+  Properties:
+    Antimatter.Games.Vector WindowsFormPosition 'get ' : 
+  Methods:
+    IsDown(MouseButton): PrivateScope, Public, HideBySig
+    IsReleased(MouseButton): PrivateScope, Public, HideBySig
+    IsPressed(MouseButton): PrivateScope, Public, HideBySig
+    IsUp(MouseButton): PrivateScope, Public, HideBySig
+    get_WindowsFormPosition(): PrivateScope, Public, Static, HideBySig, SpecialName
+    OnClick(Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnMove(Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnScroll(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    HookEvents(): PrivateScope, Public, HideBySig
+    UnHookEvents(): PrivateScope, Public, HideBySig
+    GetNormalisedPostion(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Antimatter.Games.EditorMouse: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Int32 buttonCode : Public
+    Int32 actionCode : Public
+    Int32 modCode : Public
+    Double deltaX : Public
+    Double deltaY : Public
+    Double scroll : Public
+    Boolean debug : Public
+    Boolean buttonDown : Public
+    Boolean toggle : Public
+    Antimatter.Games.Mouse mouse : Public
+    Antimatter.Games.EditorMouse Default : Public, Static
+    Int32 zoom : Public, Static
+  Methods:
+    ToggleInputToVector(Vector, Vector, Single, Single, Single): PrivateScope, Public, HideBySig
+    Control(Camera): PrivateScope, Public, HideBySig
+    InputToEulerAngles(Vector, Vector, Single, Single, Single): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Antimatter.Games.Keys: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Antimatter.Games.Keys): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 keyCode : Public
+    Int32 keyActionCode : Public
+    Boolean Pressed : Public
+    Boolean Down : Public
+    Boolean Up : Public
+    Boolean Released : Public
+    Int32 keyDelay : Public
+  Methods:
+    Update(Int32, Int32): PrivateScope, Public, HideBySig
+    Debug(String): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Keyboard: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.Input
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.KeyButton Key : Public
+    Antimatter.Games.ButtonAction Action : Public
+    Int32 keyDelay : Public
+    Boolean KeyDown : Public
+    Boolean KeyUp : Public
+    Boolean KeyPressed : Public
+    Boolean KeyReleased : Public
+    Boolean debugMode : Public
+    Int32 keyCode : Public
+    Int32 actionCode : Public
+    Int32 scanCode : Public
+    Int32 modCode : Public
+    Int32 _keycode : Public
+    Int32 _delay : Public
+    Antimatter.Games.Keyboard defaultKeyboard : Public, Static
+  Methods:
+    HookEvents(): PrivateScope, Public, HideBySig
+    On_Keyboard(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnKeyboard(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    IsPressed(KeyButton): PrivateScope, Public, HideBySig
+    IsDown(KeyButton): PrivateScope, Public, HideBySig
+    ReadKeyboard(Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    Debug(String): PrivateScope, Public, HideBySig
+    Debug(): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Scene: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.Component
+    Void .ctor(System.String, Antimatter.Games.Render): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Render): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    System.String name : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Mesh] gameObjects : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Camera] cameras : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Sprite] sprites : Public
+    Int32 cameraIndex : Public
+    Antimatter.Games.Render renderer : Public
+    Antimatter.Games.Camera camera : Public
+    Antimatter.Games.Colour BackgroundColour : Public
+    Antimatter.Games.Thing selectedObject : Public
+    Boolean DrawAABBs : Public
+    Boolean drawSprites : Public
+    Boolean clearLines : Public
+    Boolean ForceCurrentContext : Public
+    Boolean debug : Public
+    Antimatter.Games.Mesh block : Public
+    Antimatter.Games.EditorMouse editorMouse : Public
+    Antimatter.Games.Keyboard keyboard : Public
+    Antimatter.Games.Scene Current : Public, Static
+  Methods:
+    AddMesh(String): PrivateScope, Public, HideBySig
+    AddSprite(String): PrivateScope, Public, HideBySig
+    CreateMesh(String): PrivateScope, Public, HideBySig
+    MakeCurrent(Scene): PrivateScope, Public, Static, HideBySig
+    RenderSelection(): PrivateScope, Public, HideBySig
+    SelectThing(Double, Double, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    SelectByID(Double, Double, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    DrawThings(): PrivateScope, Public, HideBySig
+    PrepareScene(): PrivateScope, Public, HideBySig
+    RunUpdate(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Antimatter.Games.Controller: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String Name : Public
+    Single frame : Public
+    Single Frame : Public
+    Single LeftStickX : Public
+    Single LeftStickY : Public
+    Single RightStickX : Public
+    Single RightStickY : Public
+    Single Triggers : Public
+    Boolean A : Public
+    Boolean B : Public
+    Boolean X : Public
+    Boolean Y : Public
+    Boolean RB : Public
+    Boolean LB : Public
+    Boolean START : Public
+    Boolean BACK : Public
+    Boolean Up : Public
+    Boolean Down : Public
+    Boolean Left : Public
+    Boolean Right : Public
+    Boolean R3 : Public
+    Boolean L3 : Public
+    Int32 PlayerNumber : Public
+    Antimatter.Games.Vector LeftStick : Public
+    Antimatter.Games.Vector RightStick : Public
+    Boolean IsConnected : Public
+    Boolean WasConnected : Public
+  Methods:
+    Update(): PrivateScope, Public, HideBySig
+    DebugController(): PrivateScope, Public, HideBySig
+    GetControllerName(): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Engine: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String name : Public
+    Antimatter.Games.Core core : Public
+    Antimatter.Games.Render renderer : Public
+    Int32 Frame : Public
+    Double FPS : Public
+    Int32 sceneIndex : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Scene] scenes : Public
+    Boolean debug : Public
+    Antimatter.Games.Camera defaultCamera : Public
+    Antimatter.Games.EditorMouse EditorMouse : Public
+    Antimatter.Games.Keyboard keyboard : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Controller] controllers : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Component] components : Public
+    Boolean fixedUpdateStarted : Public
+    Boolean runFixedUpdate : Public
+    Single elapsedTime : Public
+  Properties:
+    Antimatter.Games.Scene currentScene 'get set' : 
+  Methods:
+    InitializeGLEW(): PrivateScope, Public, HideBySig
+    CreateAndRun(): PrivateScope, Public, HideBySig
+    Update(Single): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RunFixedUpdate(): PrivateScope, Public, HideBySig
+    Load(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadComponents(): PrivateScope, Public, HideBySig
+    SetMouseClickFunction(MouseClickEventHandler): PrivateScope, Public, Static, HideBySig
+    SetMouseMoveFunction(MousePositionEventHandler): PrivateScope, Public, Static, HideBySig
+    SetKeyboardFunction(KeyboardEventHandler): PrivateScope, Public, Static, HideBySig
+    SwapBuffers(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadGlaxionIcon(Byte[], Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DropObjects(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OpenAssetFolder(): PrivateScope, Public, HideBySig
+    get_currentScene(): PrivateScope, Public, HideBySig, SpecialName
+    set_currentScene(Scene): PrivateScope, Public, HideBySig, SpecialName
+    GetCurrentScene(): PrivateScope, Public, HideBySig
+    SetCurrentScene(Scene): PrivateScope, Public, HideBySig
+    Debug(): PrivateScope, Public, HideBySig
+Class Antimatter.Games.PhysicsScene: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.Scene
+    Void .ctor(Antimatter.Games.Engine): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Engine game : Public
+    Antimatter.Games.Keyboard keyboard : Public
+    Antimatter.Games.Vector startPos : Public
+    Antimatter.Games.Mouse ms : Public
+    Int32 count : Public
+    Boolean disco : Public
+    Boolean enableCollisionFeedback : Public
+    Boolean autoStep : Public
+    Int32 stepInterval : Public
+    Antimatter.Games.Vector dragoffset : Public
+    Antimatter.Games.Thing lastHoveredThing : Public
+    Antimatter.Games.Mesh selectedMesh : Public
+    Antimatter.Games.Mouse mouseState : Public
+    Antimatter.Games.Mesh cube : Public
+    Antimatter.Games.Thing hoveredThing : Public
+    Antimatter.Games.Thing grabbedThing : Public
+  Methods:
+    Load(): PrivateScope, Public, Virtual, HideBySig
+    UpdateScene(): PrivateScope, Public, Virtual, HideBySig
+    OnMouse(Mouse): PrivateScope, Public, HideBySig
+    DrawScale(): PrivateScope, Public, HideBySig
+    DebugSelectedThing(): PrivateScope, Public, HideBySig
+    MouseMove(Double, Double): PrivateScope, Public, HideBySig
+    GetHoveredThing(Double, Double): PrivateScope, Public, HideBySig
+Class Antimatter.Games.SubScene: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean pause : Public
+    Boolean step : Public
+    Boolean enableBreaking : Public
+    Antimatter.Games.Keyboard keyboard : Public
+  Methods:
+    Load(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BreakableUpdate(): PrivateScope, Public, HideBySig
+    Update(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ForceRun(): PrivateScope, Public, HideBySig
+Class Antimatter.Games.GJK2D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.SubScene
+    Void .ctor(Antimatter.Games.Physics2d, Antimatter.Games.Physics2d): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Generic.List`1[Antimatter.Games.SupportPoint] vertices : Public
+    Antimatter.Games.Vector direction : Public
+    Antimatter.Games.Vector initialDirection : Public
+    Antimatter.Games.Physics2d shapeA : Public
+    Antimatter.Games.Physics2d shapeB : Public
+    Antimatter.Games.SupportPoint closestSimplexPointB : Public
+    Antimatter.Games.SupportPoint closestSimplexPointA : Public
+    Antimatter.Games.Vector contactA : Public
+    Antimatter.Games.Vector contactB : Public
+    System.Enum evolveResult EvolveResult IsBoxed : Public
+    Int32 maxIterations : Public
+  Methods:
+    calculateSupport(Vector): PrivateScope, Public, HideBySig
+    addSupport(Vector): PrivateScope, Public, HideBySig
+    tripleProduct(Vector, Vector, Vector): PrivateScope, Public, HideBySig
+    evolveSimplex(): PrivateScope, Public, HideBySig
+    test(Physics2d, Physics2d): PrivateScope, Public, HideBySig
+    findClosestEdge(PolygonWinding): PrivateScope, Public, HideBySig
+    Intersect(Physics2d, Physics2d): PrivateScope, Public, HideBySig
+    FindContactPoints(): PrivateScope, Public, HideBySig
+    FindContact(Physics2d, Physics2d): PrivateScope, Public, HideBySig
+    Load(): PrivateScope, Public, Virtual, HideBySig
+    Update(): PrivateScope, Public, Virtual, HideBySig
+Class Antimatter.Games.GJK2D+SimplexEdge: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(Single, Antimatter.Games.Vector, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single distance : Public
+    Antimatter.Games.Vector normal : Public
+    Int32 index : Public
+Class Antimatter.Games.Manifold2d: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Antimatter.Games.Physics2d, Antimatter.Games.Physics2d): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Generic.List`1[Antimatter.Games.Contact2d] contacts : Public
+    Antimatter.Games.Contact2d deepestContact : Public
+    Antimatter.Games.Physics2d a : Public
+    Antimatter.Games.Physics2d b : Public
+    Antimatter.Games.Vector normal : Public
+    Antimatter.Games.GJK2D gjk : Public
+    Antimatter.Games.Edge refEdge : Public
+    Antimatter.Games.Edge incEdge : Public
+    Int32 contactCount : Public
+    Int32 restCounter : Public
+    Single penetration : Public
+    Single mixedRestitution : Public
+    Single mixedDynamicFriction : Public
+    Single mixedStaticFriction : Public
+    Single restThreshold : Public
+    Boolean sleep : Public
+    Boolean debug : Public
+    Boolean impact : Public
+    Boolean touching : Public
+    Boolean resting : Public
+    Boolean scraping : Public
+    Boolean alreadyChekced : Public
+    Boolean DebugManifold : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, HideBySig
+    IsPair(Manifold2d): PrivateScope, Public, HideBySig
+    IsPair(Physics2d, Physics2d): PrivateScope, Public, HideBySig
+    FindContact(): PrivateScope, Public, HideBySig
+    Clip(Edge, Vector, Single): PrivateScope, Public, HideBySig
+    GetClippingPoints(Contact2d): PrivateScope, Public, HideBySig
+    Solve(): PrivateScope, Public, HideBySig
+Class Antimatter.Games.PhysicsSolver2d: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.SubScene
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Generic.List`1[Antimatter.Games.Manifold2d] manifolds : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Physics2d] bodies : Public
+  Methods:
+    GetManifold(Physics2d, Physics2d): PrivateScope, Public, HideBySig
+    IsRunning(): PrivateScope, Public, HideBySig
+    FindManifold(Physics2d, Physics2d): PrivateScope, Public, HideBySig
+    Step(): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Sound: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String path : Public
+    IrrKlang.ISound clip : Public
+    Single volume : Public
+    Boolean mute : Public
+    IrrKlang.ISoundEngine engine : Public, Static
+    Single GlobalVolume : Public, Static
+  Methods:
+    ComputeVolume(): PrivateScope, Public, HideBySig
+    dBToVolume(Single): PrivateScope, Public, Static, HideBySig
+    VolumeTodB(Single): PrivateScope, Public, Static, HideBySig
+    Play(Single): PrivateScope, Public, HideBySig
+    Play(): PrivateScope, Public, HideBySig
+    PlayLoop(Single): PrivateScope, Public, HideBySig
+    PlayLoop(): PrivateScope, Public, HideBySig
+    SetFromFile(String): PrivateScope, Public, HideBySig
+Class Antimatter.Games.PhysicsScene2D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.PhysicsScene
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Generic.List`1[Antimatter.Games.Vertex] simplices : Public
+    Antimatter.Games.Vector pos1 : Public
+    Antimatter.Games.Vector pos2 : Public
+    Boolean step : Public
+    Boolean breakMode : Public
+    Boolean enableBreakMode : Public
+    Boolean isCollision : Public
+    Int32 count : Public
+    Antimatter.Games.Sound s : Public
+    Antimatter.Games.GJK2D subscene : Public
+    Antimatter.Games.Collider2d box1 : Public
+    Antimatter.Games.Collider2d box2 : Public
+    Antimatter.Games.Collider2d ground : Public
+    Antimatter.Games.Physics2d physics1 : Public
+    Antimatter.Games.Physics2d physics2 : Public
+    Antimatter.Games.Physics2d gPhysics : Public
+    Antimatter.Games.PhysicsSolver2d solver : Public
+    Antimatter.Games.Mesh cube2 : Public
+  Methods:
+    Load(): PrivateScope, Public, Virtual, HideBySig
+    Update(): PrivateScope, Public, Virtual, HideBySig
+    DrawAxis2D(Vector): PrivateScope, Public, HideBySig
+    MoveVertex2d(Vector&, Single): PrivateScope, Public, HideBySig
+Class Antimatter.Games.MouseShooter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.Scene
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Colour colA : Public
+    Antimatter.Games.Colour colB : Public
+    Antimatter.Games.Colour colC : Public
+    Boolean enbaleGridLighting : Public
+    Int32[,] stock : Public
+    Antimatter.Games.Colour[,] stockColour : Public
+    Antimatter.Games.Sound music1 : Public
+    Int32 skipdraw : Public
+    System.Collections.Generic.List`1[Antimatter.Games.MouseShooter+Node] nodes : Public
+    System.Collections.Generic.List`1[Antimatter.Games.MouseShooter+Node] web : Public
+    System.Collections.Generic.List`1[Antimatter.Games.MouseShooter+GLine] glines : Public
+    Player player : Public
+  Methods:
+    BlastNodes(Vector): PrivateScope, Public, HideBySig
+    DrawNodes(Colour): PrivateScope, Public, HideBySig
+    LoadPointGrid(): PrivateScope, Public, HideBySig
+    Update(): PrivateScope, Public, Virtual, HideBySig
+    DrawWeb(Colour): PrivateScope, Public, HideBySig
+Class Antimatter.Games.MouseShooter+Node: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 i : Public
+    Int32 j : Public
+    Antimatter.Games.Vector pos : Public
+    Antimatter.Games.Colour col : Public
+    Antimatter.Games.Colour glow : Public
+    Antimatter.Games.Vector force : Public
+    Antimatter.Games.Vector startPos : Public
+    Antimatter.Games.Vector velocity : Public
+    Single mass : Public
+    Single lerp : Public
+  Methods:
+    Update(): PrivateScope, Public, HideBySig
+Class Antimatter.Games.MouseShooter+GLine: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(Antimatter.Games.Vector, Antimatter.Games.Vector, Antimatter.Games.Colour, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Vector a : Public
+    Antimatter.Games.Vector b : Public
+    Antimatter.Games.Colour colour : Public
+    Single width : Public
+  Methods:
+    Draw(): PrivateScope, Public, HideBySig
+Class Antimatter.Games.MouseShooter+Player: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Antimatter.Games.Transform2D
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Colour colour : Public
+    Antimatter.Games.Colour defaultColour : Public
+    Single scale : Public
+    Single power : Public
+    Boolean lighting : Public
+    ProjectionType projectionType : Public
+  Methods:
+    Draw(): PrivateScope, Public, HideBySig
+Struct Antimatter.Games.MouseShooter+Player+ProjectionType: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ProjectionType Distance = 0 : Public, Static, Literal, HasDefault
+    ProjectionType DotProduct = 1 : Public, Static, Literal, HasDefault
+Class Antimatter.Games.PhysicsPair: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Collections.Generic.List`1[Antimatter.Games.Physics]
+    Void .ctor(Antimatter.Games.Physics, Antimatter.Games.Physics): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean debugOverlap : Public
+  Properties:
+    Antimatter.Games.Physics b 'get ' : 
+    Antimatter.Games.Physics a 'get ' : 
+  Methods:
+    IsPair(Physics, Physics): PrivateScope, Public, HideBySig
+    get_a(): PrivateScope, Public, HideBySig, SpecialName
+    get_b(): PrivateScope, Public, HideBySig, SpecialName
+    SetPair(PhysicsPair): PrivateScope, Public, HideBySig
+    SetPair(Physics, Physics): PrivateScope, Public, HideBySig
+    GetMixedRestitution(): PrivateScope, Public, HideBySig
+    GetMixedFrictionDynamic(): PrivateScope, Public, HideBySig
+    GetMixedFrictionStatic(): PrivateScope, Public, HideBySig
+    CancelGravity(): PrivateScope, Public, HideBySig
+    CancelVelocity(): PrivateScope, Public, HideBySig
+    Freeze(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Mass(): PrivateScope, Public, HideBySig
+    InverseMass(): PrivateScope, Public, HideBySig
+    IsDebuggable(): PrivateScope, Public, HideBySig
+    AABBOverlap(): PrivateScope, Public, HideBySig
+    Overlapping(): PrivateScope, Public, HideBySig
+    ApplyAngularImpulse(Single, Vector, Vector, Vector, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    ApplyMomentum(Vector, Single, Vector): PrivateScope, Public, HideBySig
+    ReverseVelocities(): PrivateScope, Public, HideBySig
+    ApplyImpulse(Vector, Single, Vector): PrivateScope, Public, HideBySig
+    ApplyLinear(Vector, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    GetString(): PrivateScope, Public, HideBySig
+    ApplyVelocity(Vector, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    SetVelocities(PhysicsPair): PrivateScope, Public, HideBySig
+    SetVelocities(Vector, Vector, Vector IsByValue, Vector): PrivateScope, Public, HideBySig
+    InverseMassK(Vector, Vector, Vector): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Contact: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.PhysicsPair
+    Void .ctor(Antimatter.Games.Vector, Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector, Antimatter.Games.Vector, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Mesh, Antimatter.Games.Mesh): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Mesh A : Public
+    Antimatter.Games.Mesh B : Public
+    Antimatter.Games.Vector point1 : Public
+    Antimatter.Games.Vector point2 : Public
+    Antimatter.Games.Vector closestPoint : Public
+    Antimatter.Games.Vector normal : Public
+    Antimatter.Games.Vector normalA : Public
+    Antimatter.Games.Vector normalB : Public
+    Single depth : Public
+    Single breakDistance : Public
+    Antimatter.Games.Vector localA : Public
+    Antimatter.Games.Vector localB : Public
+    Antimatter.Games.Vector globalA : Public
+    Antimatter.Games.Vector globalB : Public
+    Antimatter.Games.Vector tangent1 : Public
+    Antimatter.Games.Vector tangent2 : Public
+    Antimatter.Games.Vector sumFrictionVector : Public
+    Antimatter.Games.Vector r1 : Public
+    Antimatter.Games.Vector r2 : Public
+    Single constrainedMass : Public
+    Single sumImpulse : Public
+    Single sumFriction : Public
+    Single elasticity_term : Public
+    Single inverseMassK : Public
+    Single appliedImpulse : Public
+    Single distA : Public
+    Single distB : Public
+    Single staticFriction : Public
+    Single dynamicFriction : Public
+    Int32 iteration : Public
+    Boolean Collided : Public
+    Boolean isResting : Public
+    Boolean warmStart : Public
+    Boolean persistent : Public
+    Boolean debug : Public
+    Boolean rotateNormal : Public
+    Boolean invalid : Public
+    Boolean updated : Public
+    Boolean negativeDeltaVelocity : Public
+    Antimatter.Games.Vector frictionVector1 : Public
+    Antimatter.Games.Vector frictionVector2 : Public
+    Antimatter.Games.Vector relativeVelocity : Public
+    Antimatter.Games.Vector localToGlobalA : Public
+    Antimatter.Games.Vector localToGlobalB : Public
+    Boolean ShowFriction : Public, Static
+  Methods:
+    Construction(): PrivateScope, Public, HideBySig
+    PreSolve(): PrivateScope, Public, HideBySig
+    SolveSequential(): PrivateScope, Public, HideBySig
+    JacobianEntry(Vector, Quaternion, Quaternion, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    ApplyPositionCorrection(Contact): PrivateScope, Public, Static, HideBySig
+    ComputeDeltaVelocity(Contact): PrivateScope, Public, Static, HideBySig
+    ComputeDeltaVelocity(PhysicsPair, Vector, Vector): PrivateScope, Public, Static, HideBySig
+    ComputeFriction(Single, Single&, Vector&): PrivateScope, Public, HideBySig
+    ComputeFriction(PhysicsPair, Vector, Vector, Vector, Single): PrivateScope, Public, HideBySig
+    ComputeFrictionOneshot(PhysicsPair, Vector, Vector, Vector, Single): PrivateScope, Public, Static, HideBySig
+    Debug(): PrivateScope, Public, HideBySig
+    DrawDebug(): PrivateScope, Public, HideBySig
+    DrawDebug(Colour): PrivateScope, Public, HideBySig
+Class Antimatter.Games.MPR: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Antimatter.Games.Mesh, Antimatter.Games.Mesh): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Vector globalPoint1 : Public
+    Antimatter.Games.Vector globalPoint2 : Public
+    Antimatter.Games.Mesh A : Public
+    Antimatter.Games.Mesh B : Public
+    Single depth : Public
+    Antimatter.Games.Contact result : Public
+  Methods:
+    Swap(Vector&, Vector&): PrivateScope, Public, HideBySig
+    TransformSupportVert(Mesh, Vector): PrivateScope, Public, Static, HideBySig
+    GetSupportVert(List`1, Vector): PrivateScope, Public, Static, HideBySig
+    GetSupportVert(Mesh, Vector): PrivateScope, Public, Static, HideBySig
+    GetLocalSupportVert(List`1, Vector, Mesh, Vector): PrivateScope, Public, Static, HideBySig
+    Test(Mesh, Mesh): PrivateScope, Public, HideBySig
+    CollideAndFindPoint(Mesh, Mesh, Vector&, Vector&, Vector&): PrivateScope, Public, HideBySig
+Class Antimatter.Games.ClippingEdge: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector, Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Antimatter.Games.Vector, Antimatter.Games.Vector, Int32, Int32, Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 indexA : Public
+    Int32 indexB : Public
+    Antimatter.Games.Vector a : Public
+    Antimatter.Games.Vector b : Public
+    Antimatter.Games.Vector faceNormal : Public
+    Antimatter.Games.Vector worldFaceNormal : Public
+    Antimatter.Games.Mesh mesh : Public
+    Antimatter.Games.MPR mpr : Public
+  Methods:
+    isEdge(Int32, Int32): PrivateScope, Public, HideBySig
+    isReverseEdge(ClippingEdge): PrivateScope, Public, HideBySig
+    isReverseEdge(Int32, Int32): PrivateScope, Public, HideBySig
+    Draw(Colour, Colour, Vector): PrivateScope, Public, HideBySig
+    Draw(Colour, Colour): PrivateScope, Public, HideBySig
+    Draw(String, Colour, Colour, Single): PrivateScope, Public, HideBySig
+    Draw(String, Colour, Colour): PrivateScope, Public, HideBySig
+    Draw(Colour): PrivateScope, Public, HideBySig
+    DrawEdges(List`1, Colour, Vector): PrivateScope, Public, Static, HideBySig
+    DrawEdges(List`1, Transform, Colour): PrivateScope, Public, Static, HideBySig
+    DrawEdges(List`1, Colour, Vector): PrivateScope, Public, Static, HideBySig
+    DrawEdgeNormal(Colour): PrivateScope, Public, HideBySig
+    GetEdgeNormal(): PrivateScope, Public, HideBySig
+Class Antimatter.Games.Manifold: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.PhysicsPair
+    Void .ctor(Antimatter.Games.Mesh, Antimatter.Games.Mesh): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean inNarrowphase : Public
+    Antimatter.Games.Mesh A : Public
+    Antimatter.Games.Mesh B : Public
+    Antimatter.Games.MPR mpr : Public
+    Antimatter.Games.Vector normal : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Contact] contacts : Public
+    Antimatter.Games.Contact deepContact : Public
+    Antimatter.Games.Contact contact : Public
+    Boolean resting : Public
+    Boolean broadPhaseOverlap : Public
+    Boolean debug : Public
+    Boolean colliding : Public
+  Methods:
+    GetSurface(Vector, Mesh): PrivateScope, Public, HideBySig
+    GetClippingPoints(List`1, Mesh): PrivateScope, Public, HideBySig
+    GetClippingPlanes(List`1, Mesh): PrivateScope, Public, HideBySig
+    IsClockwise(List`1): PrivateScope, Public, HideBySig
+    GetIntersectionPolygon(List`1, Mesh, List`1, Mesh): PrivateScope, Public, HideBySig
+    CreateOneShot(Contact): PrivateScope, Public, HideBySig
+    TestClipping(): PrivateScope, Public, HideBySig
+    PreSolve(): PrivateScope, Public, HideBySig
+    Solve(): PrivateScope, Public, HideBySig
+    Debug(): PrivateScope, Public, HideBySig
+    IsBroadphaseOverlapping(): PrivateScope, Public, HideBySig
+    IsOutside(Vector, Vector, Vector): PrivateScope, Public, HideBySig
+    Update(Contact): PrivateScope, Public, HideBySig
+    IterateEdgesClockwise(List`1): PrivateScope, Public, HideBySig
+Class Antimatter.Games.PhysicsSolver3D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Generic.List`1[Antimatter.Games.Manifold] manifolds : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Manifold] narrowPhase : Public
+    System.Collections.Generic.List`1[Antimatter.Games.Mesh] bodies : Public
+    Boolean pause : Public
+    Boolean step : Public
+  Methods:
+    GetManifold(Mesh, Mesh): PrivateScope, Public, HideBySig
+    Running(): PrivateScope, Public, HideBySig
+    AddThing(Mesh): PrivateScope, Public, HideBySig
+    FindManifold(Mesh, Mesh): PrivateScope, Public, HideBySig
+    FindManifolds(Mesh): PrivateScope, Public, HideBySig
+    Step(): PrivateScope, Public, HideBySig
+    Debug(): PrivateScope, Public, HideBySig
+    DebugPair(Mesh, Mesh): PrivateScope, Public, HideBySig
+Class Antimatter.Games.GJK3D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Generic.List`1[Antimatter.Games.SupportPoint] simplex : Public
+    Antimatter.Games.Vector direction : Public
+    Antimatter.Games.Mesh shapeA : Public
+    Antimatter.Games.Mesh shapeB : Public
+    Int32 maxIterations : Public
+    EPATriangle closestTriangle : Public
+    Antimatter.Games.Contact result : Public
+    Boolean interseting : Public
+    Antimatter.Games.Vector returnNormal : Public
+    Single depth : Public
+    Boolean collision : Public
+    Antimatter.Games.Vector pointA : Public
+    Antimatter.Games.Vector pointB : Public
+    Antimatter.Games.Vector closestPoint : Public
+    Antimatter.Games.Vector seperation : Public
+    System.Collections.Generic.List`1[Antimatter.Games.GJK3D+Triangle] polytope : Public
+    System.Collections.Generic.List`1[Antimatter.Games.GJK3D+EPATriangle] triangles : Public
+    System.Collections.Generic.List`1[Antimatter.Games.GJK3D+EPAEdge] edges : Public
+    Int32 EPAITERARTIONS : Public, Static
+  Methods:
+    barycentric(Vector, Vector, Vector, Vector, Single&, Single&, Single&): PrivateScope, Public, HideBySig
+    calculateSupport(Vector): PrivateScope, Public, HideBySig
+    addSupport(Vector): PrivateScope, Public, HideBySig
+    Test(Mesh, Mesh): PrivateScope, Public, HideBySig
+    AddEdge(EPAEdge): PrivateScope, Public, HideBySig
+    evolveSimplex(): PrivateScope, Public, HideBySig
+    RunEPA(): PrivateScope, Public, HideBySig
+    GetContactInfo(Single, EPATriangle): PrivateScope, Public, HideBySig
+    DebugSimplex(): PrivateScope, Public, HideBySig
+    DrawSimplex(Colour): PrivateScope, Public, HideBySig
+Class Antimatter.Games.GJK3D+Triangle: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(Antimatter.Games.Vector, Antimatter.Games.Vector, Antimatter.Games.Vector): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Vector a : Public
+    Antimatter.Games.Vector b : Public
+    Antimatter.Games.Vector c : Public
+    Antimatter.Games.Colour colour : Public
+  Methods:
+    Normal(): PrivateScope, Public, HideBySig
+    Centre(): PrivateScope, Public, HideBySig
+    Draw(Colour): PrivateScope, Public, HideBySig
+    Debug(Colour, Colour): PrivateScope, Public, HideBySig
+Class Antimatter.Games.GJK3D+EPATriangle: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(Antimatter.Games.SupportPoint, Antimatter.Games.SupportPoint, Antimatter.Games.SupportPoint): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.SupportPoint a : Public
+    Antimatter.Games.SupportPoint b : Public
+    Antimatter.Games.SupportPoint c : Public
+    Antimatter.Games.Vector normal : Public
+  Methods:
+    Normal(): PrivateScope, Public, HideBySig
+    Centre(): PrivateScope, Public, HideBySig
+    Draw(Colour): PrivateScope, Public, HideBySig
+    Debug(List`1, Colour, Colour): PrivateScope, Public, HideBySig
+Class Antimatter.Games.GJK3D+EPAEdge: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(Antimatter.Games.SupportPoint, Antimatter.Games.SupportPoint): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.SupportPoint a : Public
+    Antimatter.Games.SupportPoint b : Public
+  Methods:
+    isEdge(SupportPoint, SupportPoint): PrivateScope, Public, HideBySig
+    isReverseEdge(EPAEdge): PrivateScope, Public, HideBySig
+    isReverseEdge(SupportPoint, SupportPoint): PrivateScope, Public, HideBySig
+Class Antimatter.Games.GJKDistance: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Mesh A : Public
+    Antimatter.Games.Mesh B : Public
+    GJKTriangle simplex : Public
+    GJKFeature closestFeature : Public
+    System.Collections.Generic.List`1[Antimatter.Games.SupportPoint] hull : Public
+    Antimatter.Games.Vector searchDirection : Public
+    Antimatter.Games.Vector initialDirection : Public
+    Antimatter.Games.Vector origin : Public
+    GJKTriangle closestFace : Public
+    GJKTriangle nextFace : Public
+    Antimatter.Games.Contact result : Public
+    Boolean intersecting : Public
+    Boolean pointInTriangle : Public
+    Antimatter.Games.Vector lastElimated : Public
+    Antimatter.Games.SupportPoint closestPoint : Public
+    Antimatter.Games.SupportPoint furthestSupport : Public
+    Antimatter.Games.SupportPoint nextSupport : Public
+    Antimatter.Games.SupportPoint newClosest : Public
+    Antimatter.Games.SupportPoint minVertex : Public
+    Int32 iteration_limit : Public
+  Methods:
+    calculateSupport(Vector): PrivateScope, Public, HideBySig
+    barycentric(Vector, Vector, Vector, Vector, Single&, Single&, Single&): PrivateScope, Public, HideBySig
+    UpdateResult(Single, List`1, Vector): PrivateScope, Public, HideBySig
+    closestPointToOrigin(Vector, Vector): PrivateScope, Public, HideBySig
+    closestDistanceToOrigin(Vector, Vector): PrivateScope, Public, HideBySig
+    DrawSimplex(Colour, Single): PrivateScope, Public, HideBySig
+    BuildHull(): PrivateScope, Public, HideBySig
+    DrawHull(Colour, Single): PrivateScope, Public, HideBySig
+    GetHalfSpace(): PrivateScope, Public, HideBySig
+    Test2(Mesh, Mesh): PrivateScope, Public, HideBySig
+    Test(Mesh, Mesh): PrivateScope, Public, HideBySig
+    GetElimationIndex(Vector): PrivateScope, Public, HideBySig
+Class Antimatter.Games.GJKDistance+GJKFeature: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 a : Public
+    Int32 b : Public
+    Int32 c : Public
+    Int32 count : Public
+    Antimatter.Games.Vector edgeNormal : Public
+  Methods:
+    GetCount(): PrivateScope, Public, HideBySig
+Class Antimatter.Games.GJKDistance+GJKTriangle: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :System.Collections.Generic.List`1[Antimatter.Games.SupportPoint]
+    Void .ctor(Antimatter.Games.SupportPoint, Antimatter.Games.SupportPoint, Antimatter.Games.SupportPoint): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(GJKTriangle): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Colour colour : Public
+    Antimatter.Games.Vector normal1 : Public
+    Antimatter.Games.Vector normal2 : Public
+    Antimatter.Games.Vector normal3 : Public
+  Methods:
+    GetEdgeNormals(): PrivateScope, Public, HideBySig
+    Normal(): PrivateScope, Public, HideBySig
+    ClosesetFeature(Vector): PrivateScope, Public, HideBySig
+    DrawFeature(GJKFeature, Colour): PrivateScope, Public, HideBySig
+    EvolveFace(SupportPoint): PrivateScope, Public, HideBySig
+    GetElimationIndex(Vector): PrivateScope, Public, HideBySig
+    GetNormal(): PrivateScope, Public, HideBySig
+    Centre(): PrivateScope, Public, HideBySig
+    ClosestVertex(Vector): PrivateScope, Public, HideBySig
+    Draw(Colour): PrivateScope, Public, HideBySig
+    Debug(Colour, Colour): PrivateScope, Public, HideBySig
+Class Antimatter.Games.PhysicsScene3D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.PhysicsScene
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Mesh cube : Public
+    Antimatter.Games.Mesh ground : Public
+    Antimatter.Games.Mesh thingA : Public
+    Antimatter.Games.Mesh thingB : Public
+    Antimatter.Games.Vector stickyPoint : Public
+    Antimatter.Games.PhysicsSolver3D solver3d : Public
+    Int32 timer : Public
+    Boolean enableBreaking : Public
+    Boolean drawGJK : Public
+    Single g : Public
+    Antimatter.Games.Vector mouseInWorld : Public
+    Boolean switchdebugthing : Public
+  Methods:
+    SpawnCube(): PrivateScope, Public, HideBySig
+    SelectThingForDebugging(): PrivateScope, Public, HideBySig
+    Update(): PrivateScope, Public, Virtual, HideBySig
+Class Antimatter.Games.TestGame: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Antimatter.Games.Engine
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.PhysicsScene2D scene2D : Public
+    Antimatter.Games.PhysicsScene3D scene3D : Public
+    Antimatter.Games.MouseShooter mouseShooterScene : Public
+    Int32 sceneIndex : Public
+    Int32 delay : Public
+  Methods:
+    Load(): PrivateScope, Public, Virtual, HideBySig
+    Update(Single): PrivateScope, Public, Virtual, HideBySig
+    IncrementScene(): PrivateScope, Public, HideBySig
+Struct Antimatter.Games.Mode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Antimatter.Games.Mode Solid = 0 : Public, Static, Literal, HasDefault
+    Antimatter.Games.Mode Wireframe = 1 : Public, Static, Literal, HasDefault
+    Antimatter.Games.Mode Points = 2 : Public, Static, Literal, HasDefault
+Struct Antimatter.Games.KeyButton: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    SByte value__ IsSignUnspecifiedByte : Public, SpecialName, RTSpecialName
+    Antimatter.Games.KeyButton Null = 0 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton Q = 1 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton W = 2 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton E = 3 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton R = 4 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton T = 5 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton Y = 6 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton U = 7 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton I = 8 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton O = 9 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton P = 10 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton A = 11 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton S = 12 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton D = 13 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton F = 14 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton G = 15 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton H = 16 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton J = 17 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton K = 18 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton L = 19 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton Z = 20 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton X = 21 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton C = 22 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton V = 23 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton B = 24 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton N = 25 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton M = 26 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton Enter = 27 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton Up = 28 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton Down = 29 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton Left = 30 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton Right = 31 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton n0 = 32 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton n1 = 33 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton n2 = 34 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton n3 = 35 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton n4 = 36 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton n5 = 37 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton n6 = 38 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton n7 = 39 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton n8 = 40 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton n9 = 41 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton Tab = 42 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton Space = 43 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton Backspace = 44 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton ShiftLeft = 45 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton ShiftRight = 46 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton Ctrl = 47 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton Alt = 48 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton Plus = 49 : Public, Static, Literal, HasDefault
+    Antimatter.Games.KeyButton Minus = 50 : Public, Static, Literal, HasDefault
+Struct Antimatter.Games.MouseButton: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    SByte value__ IsSignUnspecifiedByte : Public, SpecialName, RTSpecialName
+    Antimatter.Games.MouseButton Left = 0 : Public, Static, Literal, HasDefault
+    Antimatter.Games.MouseButton Right = 1 : Public, Static, Literal, HasDefault
+    Antimatter.Games.MouseButton Middle = 2 : Public, Static, Literal, HasDefault
+    Antimatter.Games.MouseButton Back = 3 : Public, Static, Literal, HasDefault
+    Antimatter.Games.MouseButton Front = 4 : Public, Static, Literal, HasDefault
+    Antimatter.Games.MouseButton SixthButton = 5 : Public, Static, Literal, HasDefault
+    Antimatter.Games.MouseButton None = 6 : Public, Static, Literal, HasDefault
+Struct Antimatter.Games.MouseAction: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    SByte value__ IsSignUnspecifiedByte : Public, SpecialName, RTSpecialName
+    Antimatter.Games.MouseAction Up = 0 : Public, Static, Literal, HasDefault
+    Antimatter.Games.MouseAction Down = 1 : Public, Static, Literal, HasDefault
+    Antimatter.Games.MouseAction Pressed = 2 : Public, Static, Literal, HasDefault
+    Antimatter.Games.MouseAction Released = 3 : Public, Static, Literal, HasDefault
+Struct Antimatter.Games.ButtonAction: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    SByte value__ IsSignUnspecifiedByte : Public, SpecialName, RTSpecialName
+    Antimatter.Games.ButtonAction Up = 0 : Public, Static, Literal, HasDefault
+    Antimatter.Games.ButtonAction Down = 1 : Public, Static, Literal, HasDefault
+    Antimatter.Games.ButtonAction Pressed = 2 : Public, Static, Literal, HasDefault
+    Antimatter.Games.ButtonAction Released = 3 : Public, Static, Literal, HasDefault
+Struct Antimatter.Games.EvolveResult: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Antimatter.Games.EvolveResult NoIntersection = 0 : Public, Static, Literal, HasDefault
+    Antimatter.Games.EvolveResult FoundIntersection = 1 : Public, Static, Literal, HasDefault
+    Antimatter.Games.EvolveResult StillEvolving = 2 : Public, Static, Literal, HasDefault
+Struct Antimatter.Games.PolygonWinding: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Antimatter.Games.PolygonWinding CounterClockwise = 0 : Public, Static, Literal, HasDefault
+    Antimatter.Games.PolygonWinding Clockwise = 1 : Public, Static, Literal, HasDefault
+Class Antimatter.Games.ContactPair: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Antimatter.Games.Mesh, Antimatter.Games.Mesh): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Antimatter.Games.Pair pair : Public
+    Antimatter.Games.PhysicsPair body : Public
+    Int32 lifetime : Public
+    Int32 index : Public
+    Antimatter.Games.Manifold manifold : Public
+  Methods:
+    GetString(): PrivateScope, Public, HideBySig
+    isDebugging(): PrivateScope, Public, HideBySig

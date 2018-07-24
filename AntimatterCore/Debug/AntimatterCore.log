@@ -1,0 +1,60 @@
+﻿  Main.cpp
+c:\users\solo\desktop\antimatter project\antimatter-engine 21 march\antimatter-core\antimattercore\draw.h(38): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+c:\users\solo\desktop\antimatter project\antimatter-engine 21 march\antimatter-core\antimattercore\editormouse.h(139): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\solo\desktop\antimatter project\antimatter-engine 21 march\antimatter-core\antimattercore\editormouse.h(140): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\solo\desktop\antimatter project\antimatter-engine 21 march\antimatter-core\antimattercore\physicsscene.h(46): warning C4490: 'override': incorrect use of override specifier; 'Antimatter::Games::PhysicsScene::UpdateScene' does not match a base ref class method
+  c:\users\solo\desktop\antimatter project\antimatter-engine 21 march\antimatter-core\antimattercore\physicsscene.h(46): note: 'new' or 'override' are only allowed when a matching base method from a ref class exists
+  AssemblyInfo.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+SOILdebug.lib(SOIL.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+XFileLoader.obj : warning LNK4248: unresolved typeref token (01000035) for 'FT_LibraryRec_'; image may not run
+PhysicsSolver3D.obj : warning LNK4248: unresolved typeref token (01000036) for 'FT_LibraryRec_'; image may not run
+PhysicsSolver2d.obj : warning LNK4248: unresolved typeref token (01000034) for 'FT_LibraryRec_'; image may not run
+PhysicsScene2D.obj : warning LNK4248: unresolved typeref token (01000039) for 'FT_LibraryRec_'; image may not run
+Physics2d.obj : warning LNK4248: unresolved typeref token (01000031) for 'FT_LibraryRec_'; image may not run
+Physics.obj : warning LNK4248: unresolved typeref token (01000035) for 'FT_LibraryRec_'; image may not run
+Mouse.obj : warning LNK4248: unresolved typeref token (01000031) for 'FT_LibraryRec_'; image may not run
+MouseShooter.obj : warning LNK4248: unresolved typeref token (01000038) for 'FT_LibraryRec_'; image may not run
+Manifold2d.obj : warning LNK4248: unresolved typeref token (01000033) for 'FT_LibraryRec_'; image may not run
+Engine.obj : warning LNK4248: unresolved typeref token (01000037) for 'FT_LibraryRec_'; image may not run
+ContactPair.obj : warning LNK4248: unresolved typeref token (01000037) for 'FT_LibraryRec_'; image may not run
+Contact.obj : warning LNK4248: unresolved typeref token (01000036) for 'FT_LibraryRec_'; image may not run
+Manifold.obj : warning LNK4248: unresolved typeref token (01000036) for 'FT_LibraryRec_'; image may not run
+Main.obj : warning LNK4248: unresolved typeref token (0100003A) for 'FT_LibraryRec_'; image may not run
+FontShader.obj : warning LNK4248: unresolved typeref token (01000030) for 'FT_LibraryRec_'; image may not run
+ContactPoint.obj : warning LNK4248: unresolved typeref token (01000031) for 'FT_LibraryRec_'; image may not run
+glaxCore.obj : warning LNK4248: unresolved typeref token (01000025) for 'GLFWwindow'; image may not run
+PhysicsScene2D.obj : warning LNK4248: unresolved typeref token (01000038) for 'GLFWwindow'; image may not run
+MouseShooter.obj : warning LNK4248: unresolved typeref token (01000037) for 'GLFWwindow'; image may not run
+Engine.obj : warning LNK4248: unresolved typeref token (01000030) for 'GLFWwindow'; image may not run
+ContactPair.obj : warning LNK4248: unresolved typeref token (01000036) for 'GLFWwindow'; image may not run
+Main.obj : warning LNK4248: unresolved typeref token (01000039) for 'GLFWwindow'; image may not run
+glaxCore.obj : warning LNK4248: unresolved typeref token (01000033) for 'GLFWmonitor'; image may not run
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\vc120.pdb'; linking object as if no debug info
+freetype271d.lib(autofit.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(autofit.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(bdf.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(bdf.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(cff.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(cff.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(ftbase.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(ftbase.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(ftbitmap.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(ftbitmap.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(ftdebug.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(ftdebug.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(ftgzip.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(ftgzip.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(ftinit.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(ftinit.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(ftlzw.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(ftlzw.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(ftsystem.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(ftsystem.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(smooth.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(smooth.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(pcf.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(pcf.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(pfr.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(pfr.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(psaux.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(psaux.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(pshinter.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(pshinter.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(psmodule.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(psmodule.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(raster.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(raster.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(sfnt.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(sfnt.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(truetype.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(truetype.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(type1.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(type1.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(type1cid.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(type1cid.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(type42.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(type42.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+freetype271d.lib(winfnt.obj) : warning LNK4099: PDB 'freetype271d.pdb' was not found with 'freetype271d.lib(winfnt.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\freetype271d.pdb'; linking object as if no debug info
+SOILdebug.lib(image_DXT.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'SOILdebug.lib(image_DXT.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\vc120.pdb'; linking object as if no debug info
+SOILdebug.lib(image_helper.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'SOILdebug.lib(image_helper.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\vc120.pdb'; linking object as if no debug info
+SOILdebug.lib(SOIL.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'SOILdebug.lib(SOIL.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\vc120.pdb'; linking object as if no debug info
+SOILdebug.lib(stb_image_aug.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'SOILdebug.lib(stb_image_aug.obj)' or at 'C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\vc120.pdb'; linking object as if no debug info
+  AntimatterCore.vcxproj -> C:\Users\Solo\Desktop\Antimatter project\Antimatter-Engine 21 March\Antimatter-Core\Debug\AntiMatter.exe

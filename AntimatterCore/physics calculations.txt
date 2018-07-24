@@ -1,0 +1,121 @@
+/Solves a collision between 2 spheres
+void PHYSICALWORLD::SolveCollision(const COLLISIONINFO& c)
+{
+	SPHERE *sA, *sB;
+
+        //get pointers to the spheres so that sA points to the sphere with mass
+        //and sB points to the sphere with 0 mass or if both have 0 mass return
+	if(sphere[c.indexA]->GetMass() > 0.f)
+	{
+		sA = sphere[c.indexA];
+		sB = sphere[c.indexB];
+	}
+	else if(sphere[c.indexB]->GetMass() > 0.f)
+	{
+		sA = sphere[c.indexB];
+		sB = sphere[c.indexA];
+	}
+	else
+		return;
+
+	bool massB = sB->GetMass() > 0.f;
+
+        //put them at the 'timeOfImpact position' and also linearly interpolate the velocities
+	sA->SetPosition(sA->GetPrevPosition() + (sA->GetPosition() - sA->GetPrevPosition())*c.timeOfImpact, false);
+	sA->SetOrientation(sA->GetPrevOrientation() + (sA->GetOrientation() - sA->GetPrevOrientation())*c.timeOfImpact,
+																									false, false);
+	sA->SetLinVelocity((sA->GetPosition() - sA->GetPrevPosition())/(sA->GetDeltaTime()*c.timeOfImpact));
+	sA->SetAngVelocity((sA->GetOrientation() - sA->GetPrevOrientation())/(sA->GetDeltaTime()*c.timeOfImpact));
+
+	if(massB)
+	{
+		sB->SetPosition(sB->GetPrevPosition() + (sB->GetPosition() - sB->GetPrevPosition())*c.timeOfImpact, false);
+		sB->SetOrientation(sB->GetPrevOrientation() + (sB->GetOrientation() - sB->GetPrevOrientation())*c.timeOfImpact,
+																									false, false);
+
+		sB->SetLinVelocity((sB->GetPosition() - sB->GetPrevPosition())/(sB->GetDeltaTime()*c.timeOfImpact));
+		sB->SetAngVelocity((sB->GetOrientation() - sB->GetPrevOrientation())/(sB->GetDeltaTime()*c.timeOfImpact));
+	}
+
+        //compute collision normal
+	VECTOR3 n = (sA->GetPosition() - sB->GetPosition())/(sA->GetRadius() + sB->GetRadius());
+	VECTOR3 rA = -n*sA->GetRadius();
+	VECTOR3 rB = n*sB->GetRadius();
+
+        //relative velocity at contact point
+	VECTOR3 vRel = sA->GetLinVelocity() + (sA->GetAngVelocity() ^ rA);
+
+	if(massB)
+		vRel -= sB->GetLinVelocity() + (sB->GetAngVelocity() ^ rB);
+
+        //normal relative velocity 
+	float nvRel = n*vRel;
+
+        //the bodies are going to penetrate
+	if(nvRel < 0.f)
+	{
+                //compute and apply normal impulse. there's no need to include
+                //the inertia tensor here because we're working with spheres only
+		float numerator = -(1.f+(sA->GetElasticity() + sB->GetElasticity())*0.5f)*nvRel;
+		float denominator = sA->GetInvMass() + sB->GetInvMass();
+		float j = numerator/denominator;
+		VECTOR3 jn = n*j;
+		sA->ApplyImpulse(jn, rA);
+		if(massB) sB->ApplyImpulse(-jn, rB);
+
+
+                //FRICTION IMPULSE
+                //compute the relative tangential velocity at the contact point
+		VECTOR3 tVel = vRel - n*nvRel;
+                //tangential speed
+		float tSpd = tVel.LengthSq();
+
+                //the tangential speed is greater than 0 then we must apply friction impulse
+		if(tSpd > 0.0000001f)
+		{
+			tSpd = sqrtf(tSpd);
+                        //friction normal to use in the impulse equation. Use the
+                        //minus sign so that it points in the opposite direction
+                        //of the tangential velocity vector
+			VECTOR3 fn = -tVel/tSpd;
+                        //compute the denominator of the impulse equation the
+                        //same way you do when computing for normal impulse
+                        //but you use the friction normal instead
+                        //the inertia is included here
+			denominator = sA->GetInvMass() + fn*((sA->GetInvInertia()*(rA^fn))^rA);
+			if(massB) denominator += sB->GetInvMass() + fn*((sB->GetInvInertia()*(rB^fn))^rB);
+
+                        //the friction impulse. the tangential speed is the numerator
+			float fj = tSpd/denominator;
+
+                        //as when working with forces, if the friction impulse
+                        //is greater than the normal impulse times the static
+                        //friction coefficient, which means a slide, the
+                        //friction impulse is the normal impulse times the
+                        //dynamic friction coefficient else there's no change
+                        //to do there
+			if(fj > j*(sA->GetStaticFriction() + sB->GetStaticFriction())*0.5f)
+				fj = j*(sA->GetDynamicFriction() + sB->GetDynamicFriction())*0.5f;
+
+                        //compute the friction impulse vector
+			VECTOR3 fjv = fn * fj;
+
+                        //apply the impulses that same way
+			sA->ApplyImpulse(fjv, rA);
+			if(massB) sB->ApplyImpulse(-fjv, rB);
+		}
+
+		sA->ApplyForce(gravity*sA->GetMass());
+		sA->ApplyDragForce(fluidDensity);
+		sA->Integrate(sA->GetDeltaTime()*(1.f - c.timeOfImpact));
+		sA->ZeroOutForces();
+
+		if(massB)
+		{
+			sB->ApplyForce(gravity*sB->GetMass());
+			sB->ApplyDragForce(fluidDensity);
+			sB->Integrate(sB->GetDeltaTime()*(1.f - c.timeOfImpact));
+			sB->ZeroOutForces();
+		}
+	}
+}

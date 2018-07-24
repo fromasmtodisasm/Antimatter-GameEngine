@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="ContactPoint.cpp" />
+    <ClCompile Include="DeferedShader.cpp" />
+    <ClCompile Include="FontShader.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Manifold.cpp" />
+    <ClCompile Include="Contact.cpp" />
+    <ClCompile Include="ContactPair.cpp" />
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="GImage.cpp" />
+    <ClCompile Include="glaxRenderer.cpp" />
+    <ClCompile Include="glaxRendererShader.cpp" />
+    <ClCompile Include="glaxShader.cpp" />
+    <ClCompile Include="glaxTransform.cpp" />
+    <ClCompile Include="glaxWindow.cpp" />
+    <ClCompile Include="Manifold2d.cpp" />
+    <ClCompile Include="Physics.cpp" />
+    <ClCompile Include="Physics2d.cpp" />
+    <ClCompile Include="PhysicsScene2D.cpp" />
+    <ClCompile Include="PhysicsSolver2d.cpp" />
+    <ClCompile Include="PhysicsSolver3D.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="glaxCore.cpp" />
+    <ClCompile Include="XFileLoader.cpp" />
+    <ClCompile Include="MouseShooter.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="glaxRender2D.cpp" />
+    <ClCompile Include="FrameBuffer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="callIntrinsics.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CImg.h" />
+    <ClInclude Include="Contact2d.h" />
+    <ClInclude Include="DeferedShader.h" />
+    <ClInclude Include="Definitions.h" />
+    <ClInclude Include="Edge.h" />
+    <ClInclude Include="Font.h" />
+    <ClInclude Include="FontNativer.h" />
+    <ClInclude Include="FontShader.h" />
+    <ClInclude Include="TestGame.h" />
+    <ClInclude Include="GJK2D.h" />
+    <ClInclude Include="GJK3d.h" />
+    <ClInclude Include="GJK2.h" />
+    <ClInclude Include="Manifold2d.h" />
+    <ClInclude Include="MPR.h" />
+    <ClInclude Include="Physics2d.h" />
+    <ClInclude Include="PhysicsPair.h" />
+    <ClInclude Include="PhysicsScene.h" />
+    <ClInclude Include="PhysicsScene2D.h" />
+    <ClInclude Include="PhysicsSolver2d.h" />
+    <ClInclude Include="PhysicsSolver3D.h" />
+    <ClInclude Include="SubScene.h" />
+    <ClInclude Include="TextGraphic.h" />
+    <ClInclude Include="tool.h" />
+    <ClInclude Include="Velocity.h" />
+    <ClInclude Include="Manifold.h" />
+    <ClInclude Include="Colour.h" />
+    <ClInclude Include="Contact.h" />
+    <ClInclude Include="ContactPair.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="Collider2d.h" />
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="Draw.h" />
+    <ClInclude Include="EngineForward.h" />
+    <ClInclude Include="EngineHeader.h" />
+    <ClInclude Include="FontManager.h" />
+    <ClInclude Include="GImage.h" />
+    <ClInclude Include="glaxCamera.h" />
+    <ClInclude Include="glaxController.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="glaxDebug.h" />
+    <ClInclude Include="glaxRender2D.h" />
+    <ClInclude Include="glaxShader.h" />
+    <ClInclude Include="glaxVAO.h" />
+    <ClInclude Include="glaxWindow.h" />
+    <ClInclude Include="Graphic.h" />
+    <ClInclude Include="OpenGL.h" />
+    <ClInclude Include="Physics.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="RenderSettings.h" />
+    <ClInclude Include="glaxDefaultShader.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="SubGeometry.h" />
+    <ClInclude Include="Transform2D.h" />
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="glaxRenderSettings.h" />
+    <ClInclude Include="glaxTexture.h" />
+    <ClInclude Include="glaxTransform.h" />
+    <ClInclude Include="glaxPrimitive.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="ObjectSelection.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Thing.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Quaternion.h" />
+    <ClInclude Include="glaxRenderer.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SystemHeader.h" />
+    <ClInclude Include="glaxCore.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="XFileLoader.h" />
+    <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="glaxList.h" />
+    <ClInclude Include="GlaxionHeader.h" />
+    <ClInclude Include="LineGraphic.h" />
+    <ClInclude Include="MouseShooter.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="EditorMouse.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="ShaderFor2DPrimitives.h" />
+    <ClInclude Include="ShaderFor2DGlow.h" />
+    <ClInclude Include="FrameBuffer.h" />
+    <ClInclude Include="ShaderForDiamonds2D.h" />
+    <ClInclude Include="MendelbrotHeader.h" />
+    <ClInclude Include="Shape2D.h" />
+    <ClInclude Include="PhysicsScene3D.h" />
+    <ClInclude Include="include\ft2build.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="GLFW_ICON.ico" />
+    <Image Include="Assets\default.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\mainAppIcon.ico">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\ball.x">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="Assets\cube.x">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="Assets\cuboid.x">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="Assets\floor.x">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="Assets\sprite.x">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="lib\irrKlang.NET4.dll">
+      <Filter>Assets</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{cbb7b1e9-45b6-41e0-8434-149329c616be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{5c023c5c-ba5c-4dc7-b753-89d73c69a854}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\FreeSans.ttf">
+      <Filter>Assets</Filter>
+    </Font>
+  </ItemGroup>
+</Project>

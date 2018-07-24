@@ -1,0 +1,343 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly irrKlang.NET4, Version=1.0.6617.18810, Culture=neutral, PublicKeyToken=a854741bd80517c7: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Struct IrrKlang.Vector3D: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single X : Public
+    Single Y : Public
+    Single Z : Public
+  Properties:
+    Double LengthSQ 'get ' : 
+    Double Length 'get ' : 
+  Methods:
+    op_Equality(Vector3D, Vector3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Vector3D, Vector3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(Vector3D, Vector3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Single, Vector3D* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Vector3D, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(Vector3D, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    Set(Vector3D): PrivateScope, Public, HideBySig
+    Set(Single, Single, Single): PrivateScope, Public, HideBySig
+    GetLength(): PrivateScope, Public, HideBySig
+    get_Length(): PrivateScope, Public, HideBySig, SpecialName
+    GetLengthSQ(): PrivateScope, Public, HideBySig
+    get_LengthSQ(): PrivateScope, Public, HideBySig, SpecialName
+    DotProduct(Vector3D): PrivateScope, Public, HideBySig
+    GetDistanceFrom(Vector3D): PrivateScope, Public, HideBySig
+    GetDistanceFromSQ(Vector3D): PrivateScope, Public, HideBySig
+    CrossProduct(Vector3D): PrivateScope, Public, HideBySig
+    IsBetweenPoints(Vector3D, Vector3D): PrivateScope, Public, HideBySig
+    Normalize(): PrivateScope, Public, HideBySig
+    SetLength(Single): PrivateScope, Public, HideBySig
+    Invert(): PrivateScope, Public, HideBySig
+    GetInterpolated(Vector3D, Single): PrivateScope, Public, HideBySig
+    Equals(Object): PrivateScope, Public, Final, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Final, Virtual, HideBySig
+Class IrrKlang.ISoundEffectControl: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(irrklang.ISound*, irrklang.ISoundEngine*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Boolean IsWavesReverbSoundEffectEnabled 'get ' : 
+    Boolean IsParamEqSoundEffectEnabled 'get ' : 
+    Boolean IsI3DL2ReverbSoundEffectEnabled 'get ' : 
+    Boolean IsGargleSoundEffectEnabled 'get ' : 
+    Boolean IsFlangerSoundEffectEnabled 'get ' : 
+    Boolean IsEchoSoundEffectEnabled 'get ' : 
+    Boolean IsDistortionSoundEffectEnabled 'get ' : 
+    Boolean IsCompressorSoundEffectEnabled 'get ' : 
+    Boolean IsChorusSoundEffectEnabled 'get ' : 
+  Methods:
+    DisableAllEffects(): PrivateScope, Public, HideBySig
+    EnableChorusSoundEffect(Single, Single, Single, Single, Boolean(HasFieldMarshal), Single, Int32): PrivateScope, Public, HideBySig
+    EnableChorusSoundEffect(): PrivateScope, Public, HideBySig
+    DisableChorusSoundEffect(): PrivateScope, Public, HideBySig
+    get_IsChorusSoundEffectEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    EnableCompressorSoundEffect(Single, Single, Single, Single, Single, Single): PrivateScope, Public, HideBySig
+    EnableCompressorSoundEffect(): PrivateScope, Public, HideBySig
+    DisableCompressorSoundEffect(): PrivateScope, Public, HideBySig
+    get_IsCompressorSoundEffectEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    EnableDistortionSoundEffect(Single, Single, Single, Single, Single): PrivateScope, Public, HideBySig
+    EnableDistortionSoundEffect(): PrivateScope, Public, HideBySig
+    DisableDistortionSoundEffect(): PrivateScope, Public, HideBySig
+    get_IsDistortionSoundEffectEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    EnableEchoSoundEffect(Single, Single, Single, Single, Int32): PrivateScope, Public, HideBySig
+    EnableEchoSoundEffect(): PrivateScope, Public, HideBySig
+    DisableEchoSoundEffect(): PrivateScope, Public, HideBySig
+    get_IsEchoSoundEffectEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    EnableFlangerSoundEffect(Single, Single, Single, Single, Boolean(HasFieldMarshal), Single, Int32): PrivateScope, Public, HideBySig
+    EnableFlangerSoundEffect(): PrivateScope, Public, HideBySig
+    DisableFlangerSoundEffect(): PrivateScope, Public, HideBySig
+    get_IsFlangerSoundEffectEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    EnableGargleSoundEffect(Int32, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    EnableGargleSoundEffect(): PrivateScope, Public, HideBySig
+    DisableGargleSoundEffect(): PrivateScope, Public, HideBySig
+    get_IsGargleSoundEffectEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    EnableI3DL2ReverbSoundEffect(Int32, Int32, Single, Single, Single, Int32, Single, Int32, Single, Single, Single, Single): PrivateScope, Public, HideBySig
+    EnableI3DL2ReverbSoundEffect(): PrivateScope, Public, HideBySig
+    DisableI3DL2ReverbSoundEffect(): PrivateScope, Public, HideBySig
+    get_IsI3DL2ReverbSoundEffectEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    EnableParamEqSoundEffect(Single, Single, Single): PrivateScope, Public, HideBySig
+    EnableParamEqSoundEffect(): PrivateScope, Public, HideBySig
+    DisableParamEqSoundEffect(): PrivateScope, Public, HideBySig
+    get_IsParamEqSoundEffectEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    EnableWavesReverbSoundEffect(Single, Single, Single, Single): PrivateScope, Public, HideBySig
+    EnableWavesReverbSoundEffect(): PrivateScope, Public, HideBySig
+    DisableWavesReverbSoundEffect(): PrivateScope, Public, HideBySig
+    get_IsWavesReverbSoundEffectEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Interface IrrKlang.ISoundStopEventReceiver: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+  Methods:
+    OnSoundStopped(ISound, StopEventCause, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class IrrKlang.ISound: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(irrklang.ISound*, irrklang.ISoundEngine*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    UInt32 PlayLength 'get ' : 
+    IrrKlang.ISoundEffectControl SoundEffectControl 'get ' : 
+    Single PlaybackSpeed 'get set' : 
+    UInt32 PlayPosition 'get set' IsLong : 
+    IrrKlang.Vector3D Velocity 'get set' : 
+    IrrKlang.Vector3D Position 'get set' : 
+    Single MaxDistance 'get set' : 
+    Single MinDistance 'get set' : 
+    Boolean Finished 'get ' : 
+    Boolean Looped 'get set' : 
+    Single Pan 'get set' : 
+    Single Volume 'get set' : 
+    Boolean Paused 'get set' : 
+  Methods:
+    set_Paused(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_Paused(): PrivateScope, Public, HideBySig, SpecialName
+    Stop(): PrivateScope, Public, HideBySig
+    get_Volume(): PrivateScope, Public, HideBySig, SpecialName
+    set_Volume(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Pan(): PrivateScope, Public, HideBySig, SpecialName
+    set_Pan(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Looped(): PrivateScope, Public, HideBySig, SpecialName
+    set_Looped(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_Finished(): PrivateScope, Public, HideBySig, SpecialName
+    get_MinDistance(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinDistance(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxDistance(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaxDistance(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+    set_Position(Vector3D): PrivateScope, Public, HideBySig, SpecialName
+    get_Velocity(): PrivateScope, Public, HideBySig, SpecialName
+    set_Velocity(Vector3D): PrivateScope, Public, HideBySig, SpecialName
+    get_PlayPosition(): PrivateScope, Public, HideBySig, SpecialName
+    set_PlayPosition(UInt32 IsLong): PrivateScope, Public, HideBySig, SpecialName
+    get_PlaybackSpeed(): PrivateScope, Public, HideBySig, SpecialName
+    set_PlaybackSpeed(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_SoundEffectControl(): PrivateScope, Public, HideBySig, SpecialName
+    setSoundStopEventReceiver(ISoundStopEventReceiver): PrivateScope, Public, HideBySig
+    setSoundStopEventReceiver(ISoundStopEventReceiver, Object): PrivateScope, Public, HideBySig
+    get_PlayLength(): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Struct IrrKlang.AudioFormat: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 ChannelCount : Public
+    Int32 FrameCount : Public
+    Int32 SampleRate : Public
+    IrrKlang.SampleFormat Format : Public
+  Properties:
+    Int32 BytesPerSecond 'get ' : 
+    Int32 SampleDataSize 'get ' : 
+    Int32 FrameSize 'get ' : 
+    Int32 SampleSize 'get ' : 
+  Methods:
+    get_SampleSize(): PrivateScope, Public, HideBySig, SpecialName
+    get_FrameSize(): PrivateScope, Public, HideBySig, SpecialName
+    get_SampleDataSize(): PrivateScope, Public, HideBySig, SpecialName
+    get_BytesPerSecond(): PrivateScope, Public, HideBySig, SpecialName
+Class IrrKlang.ISoundSource: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(irrklang.ISoundSource*, irrklang.ISoundEngine*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Byte[] SampleData 'get ' : 
+    Int32 ForcedStreamingThreshold 'get set' : 
+    IrrKlang.AudioFormat AudioFormat 'get ' : 
+    Boolean IsSeekingSupported 'get ' : 
+    Single DefaultMaxDistance 'get set' : 
+    Single DefaultMinDistance 'get set' : 
+    Single DefaultVolume 'get set' : 
+    UInt32 PlayLength 'get ' : 
+    IrrKlang.StreamMode StreamMode 'get set' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    get_StreamMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_StreamMode(StreamMode): PrivateScope, Public, HideBySig, SpecialName
+    get_PlayLength(): PrivateScope, Public, HideBySig, SpecialName
+    get_DefaultVolume(): PrivateScope, Public, HideBySig, SpecialName
+    set_DefaultVolume(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_DefaultMinDistance(): PrivateScope, Public, HideBySig, SpecialName
+    set_DefaultMinDistance(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_DefaultMaxDistance(): PrivateScope, Public, HideBySig, SpecialName
+    set_DefaultMaxDistance(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_IsSeekingSupported(): PrivateScope, Public, HideBySig, SpecialName
+    get_AudioFormat(): PrivateScope, Public, HideBySig, SpecialName
+    ForceReloadAtNextUse(): PrivateScope, Public, HideBySig
+    get_ForcedStreamingThreshold(): PrivateScope, Public, HideBySig, SpecialName
+    set_ForcedStreamingThreshold(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_SampleData(): PrivateScope, Public, HideBySig, SpecialName
+    getNativeSoundSource(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Interface IrrKlang.IFileFactory: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+  Methods:
+    openFile(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class IrrKlang.ISoundEngine: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(IrrKlang.SoundOutputDriver, IrrKlang.SoundEngineOptionFlag, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(IrrKlang.SoundOutputDriver, IrrKlang.SoundEngineOptionFlag): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(IrrKlang.SoundOutputDriver): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Single Default3DSoundMaxDistance 'get set' : 
+    Single Default3DSoundMinDistance 'get set' : 
+    Boolean IsMultiThreaded 'get ' : 
+    Single SoundVolume 'get set' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    Play2D(ISoundSource, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Play2D(String, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Play2D(String, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Play2D(String): PrivateScope, Public, HideBySig
+    Play2D(String, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), StreamMode): PrivateScope, Public, HideBySig
+    Play2D(String, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), StreamMode, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Play3D(ISoundSource, Single, Single, Single, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Play3D(String, Single, Single, Single): PrivateScope, Public, HideBySig
+    Play3D(String, Single, Single, Single, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Play3D(String, Single, Single, Single, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Play3D(String, Single, Single, Single, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), StreamMode): PrivateScope, Public, HideBySig
+    Play3D(String, Single, Single, Single, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), StreamMode, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Play3D(String, Vector3D, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), StreamMode, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Play3D(String, Vector3D, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), StreamMode): PrivateScope, Public, HideBySig
+    StopAllSounds(): PrivateScope, Public, HideBySig
+    SetAllSoundsPaused(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    get_SoundVolume(): PrivateScope, Public, HideBySig, SpecialName
+    set_SoundVolume(Single): PrivateScope, Public, HideBySig, SpecialName
+    SetListenerPosition(Single, Single, Single, Single, Single, Single): PrivateScope, Public, HideBySig
+    SetListenerPosition(Single, Single, Single, Single, Single, Single, Single, Single, Single, Single, Single, Single): PrivateScope, Public, HideBySig
+    SetListenerPosition(Vector3D, Vector3D): PrivateScope, Public, HideBySig
+    SetListenerPosition(Vector3D, Vector3D, Vector3D, Vector3D): PrivateScope, Public, HideBySig
+    SetDopplerEffectParameters(Single, Single): PrivateScope, Public, HideBySig
+    SetRolloffFactor(Single): PrivateScope, Public, HideBySig
+    Update(): PrivateScope, Public, HideBySig
+    IsCurrentlyPlaying(String): PrivateScope, Public, HideBySig
+    get_IsMultiThreaded(): PrivateScope, Public, HideBySig, SpecialName
+    AddSoundSourceFromFile(String): PrivateScope, Public, HideBySig
+    AddSoundSourceFromFile(String, StreamMode): PrivateScope, Public, HideBySig
+    AddSoundSourceFromFile(String, StreamMode, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    AddSoundSourceAlias(ISoundSource, String): PrivateScope, Public, HideBySig
+    AddSoundSourceFromMemory(Byte[], String): PrivateScope, Public, HideBySig
+    AddSoundSourceFromPCMData(Byte[], String, AudioFormat): PrivateScope, Public, HideBySig
+    AddSoundSourceFromIOStream(Stream, String): PrivateScope, Public, HideBySig
+    RemoveSoundSource(String): PrivateScope, Public, HideBySig
+    RemoveAllSoundSources(): PrivateScope, Public, HideBySig
+    GetSoundSource(String, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    GetSoundSource(String): PrivateScope, Public, HideBySig
+    get_Default3DSoundMinDistance(): PrivateScope, Public, HideBySig, SpecialName
+    set_Default3DSoundMinDistance(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Default3DSoundMaxDistance(): PrivateScope, Public, HideBySig, SpecialName
+    set_Default3DSoundMaxDistance(Single): PrivateScope, Public, HideBySig, SpecialName
+    AddFileFactory(IFileFactory): PrivateScope, Public, HideBySig
+    LoadPlugins(String): PrivateScope, Public, HideBySig
+    internalGetNativeEngine(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class IrrKlang.IAudioRecorder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(IrrKlang.ISoundEngine, IrrKlang.SoundOutputDriver, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(IrrKlang.ISoundEngine, IrrKlang.SoundOutputDriver): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(IrrKlang.ISoundEngine): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Byte[] RecordedAudioData 'get ' : 
+    IrrKlang.AudioFormat AudioFormat 'get ' : 
+    Boolean IsRecording 'get ' : 
+  Methods:
+    StartRecordingBufferedAudio(Int32, SampleFormat, Int32): PrivateScope, Public, HideBySig
+    StartRecordingBufferedAudio(): PrivateScope, Public, HideBySig
+    StopRecordingAudio(): PrivateScope, Public, HideBySig
+    AddSoundSourceFromRecordedAudio(String): PrivateScope, Public, HideBySig
+    ClearRecordedAudioDataBuffer(): PrivateScope, Public, HideBySig
+    get_IsRecording(): PrivateScope, Public, HideBySig, SpecialName
+    get_AudioFormat(): PrivateScope, Public, HideBySig, SpecialName
+    get_RecordedAudioData(): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Struct IrrKlang.SoundOutputDriver: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    IrrKlang.SoundOutputDriver AutoDetect = 0 : Public, Static, Literal, HasDefault
+    IrrKlang.SoundOutputDriver DirectSound8 = 1 : Public, Static, Literal, HasDefault
+    IrrKlang.SoundOutputDriver DirectSound = 2 : Public, Static, Literal, HasDefault
+    IrrKlang.SoundOutputDriver WinMM = 3 : Public, Static, Literal, HasDefault
+    IrrKlang.SoundOutputDriver ALSA = 4 : Public, Static, Literal, HasDefault
+    IrrKlang.SoundOutputDriver CoreAudio = 5 : Public, Static, Literal, HasDefault
+    IrrKlang.SoundOutputDriver NullDriver = 6 : Public, Static, Literal, HasDefault
+Struct IrrKlang.StreamMode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    IrrKlang.StreamMode AutoDetect = 0 : Public, Static, Literal, HasDefault
+    IrrKlang.StreamMode Streaming = 1 : Public, Static, Literal, HasDefault
+    IrrKlang.StreamMode NoStreaming = 2 : Public, Static, Literal, HasDefault
+Struct IrrKlang.SoundEngineOptionFlag: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    IrrKlang.SoundEngineOptionFlag MultiThreaded = 1 : Public, Static, Literal, HasDefault
+    IrrKlang.SoundEngineOptionFlag MuteIfNotFocused = 2 : Public, Static, Literal, HasDefault
+    IrrKlang.SoundEngineOptionFlag LoadPlugins = 4 : Public, Static, Literal, HasDefault
+    IrrKlang.SoundEngineOptionFlag Use3DBuffers = 8 : Public, Static, Literal, HasDefault
+    IrrKlang.SoundEngineOptionFlag PrintDebugInfoIntoDebugger = 16 : Public, Static, Literal, HasDefault
+    IrrKlang.SoundEngineOptionFlag PrintDebugInfoToStdOut = 32 : Public, Static, Literal, HasDefault
+    IrrKlang.SoundEngineOptionFlag LinearRolloff = 64 : Public, Static, Literal, HasDefault
+    IrrKlang.SoundEngineOptionFlag DefaultOptions = 61 : Public, Static, Literal, HasDefault
+Struct IrrKlang.StopEventCause: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    IrrKlang.StopEventCause SoundFinishedPlaying = 0 : Public, Static, Literal, HasDefault
+    IrrKlang.StopEventCause SoundStoppedByUser = 1 : Public, Static, Literal, HasDefault
+    IrrKlang.StopEventCause SoundStoppedBySourceRemoval = 2 : Public, Static, Literal, HasDefault
+Struct IrrKlang.SampleFormat: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    IrrKlang.SampleFormat Unsigned8Bit = 0 : Public, Static, Literal, HasDefault
+    IrrKlang.SampleFormat Signed16Bit = 1 : Public, Static, Literal, HasDefault
+Class IrrKlang.ISoundDeviceList: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(IrrKlang.SoundDeviceListType, IrrKlang.SoundOutputDriver): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(IrrKlang.SoundDeviceListType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Int32 DeviceCount 'get ' : 
+  Methods:
+    get_DeviceCount(): PrivateScope, Public, HideBySig, SpecialName
+    getDeviceID(Int32): PrivateScope, Public, HideBySig
+    getDeviceDescription(Int32): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Struct IrrKlang.SoundDeviceListType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    IrrKlang.SoundDeviceListType PlaybackDevice = 0 : Public, Static, Literal, HasDefault
+    IrrKlang.SoundDeviceListType RecordingDevice = 1 : Public, Static, Literal, HasDefault
